@@ -29,8 +29,14 @@ public class LoginController {
     }
 
     private void checkLogIn() throws IOException {
-        if (username.getText().isEmpty() && password.getText().isEmpty()){
+        if (username.getText().toString().equals("Admin") && password.getText().toString().equals("admin")){
+            m.changeScene("mainMenu.fxml");
+        }
+        else if (username.getText().isEmpty() && password.getText().isEmpty()){
             loginMsg.setText("Please enter your data");
+        }
+        else {
+            loginMsg.setText("Username or Password Invalid");
         }
 
     }

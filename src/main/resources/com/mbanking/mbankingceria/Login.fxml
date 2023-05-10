@@ -13,7 +13,7 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mbanking.mbankingceria.LoginController">
    <center>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="background" stylesheets="@assets/CSS/login.css" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="background" stylesheets="@assets/CSS/style.css" BorderPane.alignment="CENTER">
          <children>
             <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="58.0" layoutY="14.0">
                <image>

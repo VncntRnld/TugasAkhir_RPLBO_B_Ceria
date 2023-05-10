@@ -1,0 +1,8 @@
+.background {
+    -fx-background-color: linear-gradient(#24243e, #302b63, #0f0c29);
+}
+
+.transButton {
+    -fx-background-color:transparent;
+    -fx-border-color:transparent;
+}
