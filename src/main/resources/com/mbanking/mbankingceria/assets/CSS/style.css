@@ -6,3 +6,7 @@
     -fx-background-color:transparent;
     -fx-border-color:transparent;
 }
+
+.buttonBack {
+    -fx-background-image: url("../img/backButton-01.png");
+}

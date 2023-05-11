@@ -34,6 +34,8 @@ public class RegisterController {
 
     // 02 form
     @FXML
+    private Button buttonBack;
+    @FXML
     private TextField inputUsername;
     @FXML
     private PasswordField inputPassword;
@@ -53,8 +55,13 @@ public class RegisterController {
         m.changeScene("Register02.fxml");
     }
 
+    public void toRegister(ActionEvent event) throws IOException {
+        m.changeScene("Register.fxml");
+    }
+
     public void submitForm(ActionEvent event) throws IOException {
         m.changeScene("Login.fxml");
     }
+
 
 }
