@@ -5,15 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff0f5416-636c-4ef3-8c3c-acd41deef3cc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/mbanking/mbankingceria/transferAntarBank_Baru.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/MenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/RegisterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mbanking/mbankingceria/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mbanking/mbankingceria/Login.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/mbanking/mbankingceria/Register02.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mbanking/mbankingceria/Register02.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/mbanking/mbankingceria/assets/CSS/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mbanking/mbankingceria/assets/CSS/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/mbanking/mbankingceria/mainMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mbanking/mbankingceria/mainMenu.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/mbanking/mbankingceria/menuTransfer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mbanking/mbankingceria/menuTransfer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mbanking/mbankingceria/transferAntarBank_Baru.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mbanking/mbankingceria/transferAntarBank_Baru.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,20 +45,23 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "D:/Kuliah/Semester 4/RPLBO/ProjectAkhir/MBankingCeria/src/main/resources/com/mbanking/mbankingceria/assets/img",
+    "last_opened_file_path": "D:/Kuliah/Semester 4/RPLBO/ProjectAkhir/MBankingCeria/src/main/java/com/mbanking/mbankingceria",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "project.propGUI"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Kuliah\Semester 4\RPLBO\ProjectAkhir\MBankingCeria\src\main\resources\com\mbanking\mbankingceria\assets\img" />
+      <recent name="D:\Kuliah\Semester 4\RPLBO\ProjectAkhir\MBankingCeria\src\main\java\com\mbanking\mbankingceria" />
       <recent name="D:\Kuliah\Semester 4\RPLBO\ProjectAkhir\MBankingCeria\src\main\resources\com\mbanking\mbankingceria" />
+      <recent name="D:\Kuliah\Semester 4\RPLBO\ProjectAkhir\MBankingCeria\src\main\resources\com\mbanking\mbankingceria\assets\img" />
     </key>
   </component>
   <component name="RunManager">

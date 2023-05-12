@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="320.0" styleClass="background" stylesheets="@assets/CSS/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Circle fill="WHITE" layoutX="160.0" layoutY="110.0" radius="28.0" stroke="BLACK" strokeType="INSIDE" />
+      <Button layoutX="134.0" layoutY="479.0" mnemonicParsing="false" text="Unduh" />
+      <Button layoutX="68.0" layoutY="508.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="189.0" text="Kembali ke Menu Utama" />
+      <Label layoutX="105.0" layoutY="154.0" text="TRANSAKSI BERHASIL" textFill="WHITE" />
+      <Label layoutX="62.0" layoutY="171.0" text="STRUK PEMBELIAN LISTRIK BERBAYAR" textFill="WHITE" />
+      <Label layoutX="34.0" layoutY="200.0" text="NO METER" textFill="WHITE" AnchorPane.leftAnchor="34.0" />
+      <Label layoutX="34.0" layoutY="217.0" text="ID Pelanggan" textFill="WHITE" AnchorPane.leftAnchor="34.0" />
+      <Label layoutX="34.0" layoutY="234.0" text="Nama" textFill="WHITE" AnchorPane.leftAnchor="34.0" />
+      <Label layoutX="34.0" layoutY="251.0" text="Tarif Daya " textFill="WHITE" AnchorPane.leftAnchor="34.0" />
+      <Label layoutX="34.0" layoutY="270.0" text="Bayar" textFill="WHITE" AnchorPane.leftAnchor="34.0" />
+      <Label layoutX="34.0" layoutY="290.0" text="Materai" textFill="WHITE" AnchorPane.leftAnchor="34.0" />
+      <Label layoutX="34.0" layoutY="309.0" text="PPn" textFill="WHITE" AnchorPane.leftAnchor="34.0" />
+      <Label layoutX="34.0" layoutY="351.0" text="RP Token " textFill="WHITE" AnchorPane.leftAnchor="34.0" />
+      <Label layoutX="34.0" layoutY="370.0" text="JLM KWH" textFill="WHITE" AnchorPane.leftAnchor="34.0" />
+      <Label layoutX="34.0" layoutY="392.0" text="Token" textFill="WHITE" AnchorPane.leftAnchor="34.0" />
+      <Label layoutX="34.0" layoutY="413.0" text="Admin" textFill="WHITE" AnchorPane.leftAnchor="34.0" />
+      <Label layoutX="34.0" layoutY="431.0" text="Tanggal/Waktu" textFill="WHITE" AnchorPane.leftAnchor="34.0" />
+      <Label layoutX="208.0" layoutY="198.0" text=" 123456789098" textFill="WHITE" AnchorPane.rightAnchor="34.0" />
+      <Label layoutX="208.0" layoutY="215.0" text="12345678909876" textFill="WHITE" AnchorPane.rightAnchor="34.0" />
+      <Label layoutX="208.0" layoutY="232.0" text="Dhea Angeline" textFill="WHITE" AnchorPane.rightAnchor="34.0" />
+      <Label layoutX="208.0" layoutY="249.0" text="R1/300 VA" textFill="WHITE" AnchorPane.rightAnchor="34.0" />
+      <Label layoutX="208.0" layoutY="268.0" text="100.000" textFill="WHITE" AnchorPane.rightAnchor="34.0" />
+      <Label layoutX="208.0" layoutY="288.0" text="Materai" textFill="WHITE" AnchorPane.rightAnchor="34.0" />
+      <Label layoutX="208.0" layoutY="307.0" text="0" textFill="WHITE" AnchorPane.rightAnchor="34.0" />
+      <Label layoutX="232.0" layoutY="349.0" text="95.454" textFill="WHITE" AnchorPane.rightAnchor="34.666666666666686" />
+      <Label layoutX="234.0" layoutY="368.0" text="61.0" textFill="WHITE" AnchorPane.rightAnchor="34.666666666666686" />
+      <Label layoutX="253.0" layoutY="390.0" text="123 2345 3321 5657 0987" textFill="WHITE" AnchorPane.rightAnchor="34.333333333333314" />
+      <Label layoutX="250.0" layoutY="411.0" text="3.000" textFill="WHITE" AnchorPane.rightAnchor="34.666666666666686" />
+      <Label layoutX="204.0" layoutY="429.0" text="12-03-2023 12:52:09" textFill="WHITE" AnchorPane.rightAnchor="34.666666666666686" />
+      <Label layoutX="35.0" layoutY="326.0" text="PPh " textFill="WHITE" AnchorPane.leftAnchor="34.0" />
+      <Label layoutX="259.0" layoutY="326.0" text="4.546" textFill="WHITE" AnchorPane.rightAnchor="34.0" />
+   </children>
+</AnchorPane>

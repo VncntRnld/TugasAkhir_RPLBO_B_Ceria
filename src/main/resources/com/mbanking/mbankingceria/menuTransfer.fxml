@@ -11,7 +11,7 @@
 
 <AnchorPane prefHeight="560.0" prefWidth="320.0" styleClass="background" stylesheets="@assets/CSS/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mbanking.mbankingceria.menuTransferController">
    <children>
-      <Pane layoutX="17.0" layoutY="22.0" AnchorPane.leftAnchor="17.0" AnchorPane.topAnchor="22.0">
+      <Pane layoutX="37.0" layoutY="42.0" AnchorPane.leftAnchor="17.0" AnchorPane.topAnchor="22.0">
          <children>
             <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="7.0" layoutY="2.0">
                <image>
@@ -21,13 +21,18 @@
                   <Cursor fx:constant="DEFAULT" />
                </cursor>
             </ImageView>
-            <Button fx:id="buttonBack" mnemonicParsing="false" onAction="#toMainMenu" prefHeight="32.0" prefWidth="46.0" styleClass="transButton" stylesheets="@assets/CSS/style.css">
+            <Button fx:id="buttonBack" mnemonicParsing="false" onAction="#toMainMenu" prefHeight="32.0" prefWidth="46.0" style="-fx-background-color: transparent;">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
          </children>
       </Pane>
+      <ImageView fitHeight="93.0" fitWidth="99.0" layoutX="112.0" layoutY="-8.0" pickOnBounds="true">
+         <image>
+            <Image url="@assets/img/Logo.png" />
+         </image>
+      </ImageView>
       <Label alignment="CENTER" layoutX="131.0" layoutY="85.0" prefHeight="25.0" prefWidth="58.0" text="PILIH" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <font>
             <Font name="System Bold" size="22.0" />
@@ -45,11 +50,6 @@
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <ImageView fitHeight="93.0" fitWidth="99.0" layoutX="112.0" layoutY="-8.0" pickOnBounds="true">
-         <image>
-            <Image url="@assets/img/Logo.png" />
-         </image>
-      </ImageView>
       <Button layoutX="162.0" layoutY="166.0" mnemonicParsing="false" prefHeight="169.0" prefWidth="97.0" style="-fx-background-color: White;" text="SESAMA&#10;BANK" textAlignment="CENTER">
          <font>
             <Font name="System Bold" size="12.0" />
