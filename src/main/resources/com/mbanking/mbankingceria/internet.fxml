@@ -8,9 +8,10 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="320.0" styleClass="background" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="320.0" styleClass="background" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mbanking.mbankingceria.internetController">
    <children>
       <ImageView fitHeight="93.0" fitWidth="99.0" layoutX="112.0" layoutY="-8.0" AnchorPane.leftAnchor="111.0" AnchorPane.rightAnchor="110.0">
          <image>
@@ -47,6 +48,23 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
+      <Pane layoutX="57.0" layoutY="62.0" AnchorPane.leftAnchor="17.0" AnchorPane.topAnchor="22.0">
+         <children>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="7.0" layoutY="2.0">
+               <image>
+                  <Image url="@assets/img/backButton-01.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </ImageView>
+            <Button fx:id="buttonBack" mnemonicParsing="false" onAction="#toMenuPayment" prefHeight="32.0" prefWidth="46.0" style="-fx-background-color: transparent;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
    </children>
    <stylesheets>
       <URL value="@assets/CSS/style.css" />
