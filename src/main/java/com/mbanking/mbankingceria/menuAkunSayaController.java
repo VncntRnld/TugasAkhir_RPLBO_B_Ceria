@@ -31,5 +31,4 @@ public class menuAkunSayaController {
     public void toMainMenu(ActionEvent event) throws IOException {
         m.changeScene("mainMenu.fxml");
     }
-
 }

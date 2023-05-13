@@ -17,12 +17,19 @@ public class menuTransferController {
 
     @FXML
     private Button buttonAntarBank;
+
+    @FXML
+    private Button buttonSesamaBank;
+
     @FXML
     private Button buttonBack;
 
     public void toAntarBank(ActionEvent event) throws IOException {
         m.changeScene("transferAntarBank_Baru.fxml");
 
+    }
+    public void toSesamaBank(ActionEvent event) throws IOException {
+        m.changeScene("transferSesamaBank_Baru.fxml");
     }
 
     public void toMainMenu(ActionEvent event) throws IOException{

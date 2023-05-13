@@ -8,20 +8,21 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mbanking.mbankingceria.LoginController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mbanking.mbankingceria.limitController">
    <center>
-        <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="background" stylesheets="@../assets/CSS/style.css" BorderPane.alignment="CENTER">
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="background" stylesheets="@assets/CSS/style.css" BorderPane.alignment="CENTER">
          <children>
             <ImageView fitHeight="93.0" fitWidth="99.0" layoutX="112.0" layoutY="-8.0" pickOnBounds="true">
                <image>
-                  <Image url="@../assets/img/Logo.png" />
+                  <Image url="@assets/img/Logo.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="123.0" fitWidth="188.0" layoutX="66.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../assets/img/kartu_kredit.png" />
+                  <Image url="@assets/img/kartu_kredit.png" />
                </image>
             </ImageView>
             <Label layoutX="67.0" layoutY="209.0" prefHeight="32.0" prefWidth="87.0" text="Limit Saat Ini" textFill="WHITE">
@@ -53,6 +54,23 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
+            <Pane AnchorPane.leftAnchor="17.0" AnchorPane.topAnchor="22.0">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="7.0" layoutY="2.0">
+                     <image>
+                        <Image url="@assets/img/backButton-01.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </ImageView>
+                  <Button fx:id="buttonBack" mnemonicParsing="false" onAction="#toMenuAkunSayaController" prefHeight="32.0" prefWidth="46.0" style="-fx-background-color: transparent;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </Pane>
          </children>
         </AnchorPane>
    </center>
