@@ -5,21 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff0f5416-636c-4ef3-8c3c-acd41deef3cc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/transferSesamaBankBaru.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/transferSesamaBankFavorit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/menuTransferController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/menuTransferController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mbanking/mbankingceria/aturLimit.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mbanking/mbankingceria/aturLimit.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mbanking/mbankingceria/blokirAkun.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mbanking/mbankingceria/blokirAkun.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mbanking/mbankingceria/infoSaldo.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mbanking/mbankingceria/infoSaldo.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mbanking/mbankingceria/menuTransfer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mbanking/mbankingceria/menuTransfer.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mbanking/mbankingceria/pin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mbanking/mbankingceria/pin.fxml" afterDir="false" />
     </list>
     <list id="23708cdb-aa4f-4b7d-acc4-750582cf220f" name="Changes by Dell" comment="" />
-    <list id="37dbcf0c-5e1f-4e54-86a8-fc838e2366fe" name="Changes by LENOVO" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/menuAkunSayaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/menuAkunSayaController.java" afterDir="false" />
-    </list>
+    <list id="37dbcf0c-5e1f-4e54-86a8-fc838e2366fe" name="Changes by LENOVO" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
