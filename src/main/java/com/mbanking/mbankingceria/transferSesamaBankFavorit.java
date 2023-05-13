@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Hyperlink;
 
+import java.io.DataInput;
 import java.io.IOException;
 
 public class transferSesamaBankFavorit {
@@ -30,6 +31,7 @@ public class transferSesamaBankFavorit {
     }
 
     public void toPIN(ActionEvent event) throws IOException {
+        Data.scene = "transferSesamaBankFavorit";
         m.changeScene("pin.fxml");
     }
 }
