@@ -26,7 +26,7 @@
       <TextField layoutX="43.0" layoutY="162.0" prefHeight="25.0" prefWidth="233.0" />
       <Label layoutX="43.0" layoutY="198.0" text="Nominal (Kelipatan Rp 50.000,00)" textFill="WHITE" />
       <TextField layoutX="43.0" layoutY="218.0" prefHeight="25.0" prefWidth="233.0" />
-      <Button layoutX="43.0" layoutY="487.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="235.0" text="LANJUT">
+      <Button fx:id="buttonLanjut" layoutX="43.0" layoutY="487.0" mnemonicParsing="false" onAction="#toPIN" prefHeight="27.0" prefWidth="235.0" text="LANJUT">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>

@@ -15,10 +15,17 @@ public class listrikController {
     Main m = new Main();
 
     @FXML
-    private Button backButton;
+    private Button buttonBack;
+
+    @FXML
+    private Button buttonLanjut;
 
     public void toMenuPayment(ActionEvent event) throws IOException {
         m.changeScene("menuPayment.fxml");
+    }
+
+    public void toPIN(ActionEvent event) throws IOException {
+        m.changeScene("pin.fxml");
     }
 
 }
