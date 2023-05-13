@@ -46,7 +46,7 @@
                   <Font size="10.0" />
                </font>
             </Label>
-            <Button layoutX="20.0" layoutY="487.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="280.0" text="SIMPAN">
+            <Button fx:id="buttonLanjut" layoutX="20.0" layoutY="487.0" mnemonicParsing="false" onAction="#toPIN" prefHeight="27.0" prefWidth="280.0" text="SIMPAN">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>

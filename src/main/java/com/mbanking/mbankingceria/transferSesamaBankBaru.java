@@ -25,4 +25,8 @@ public class transferSesamaBankBaru {
     public void toTransferMenuSesamaBankFavorit(ActionEvent event) throws IOException {
         m.changeScene("transferSesamaBank_Favorit.fxml");
     }
+
+    public void toPIN(ActionEvent event) throws IOException {
+        m.changeScene("pin.fxml");
+    }
 }

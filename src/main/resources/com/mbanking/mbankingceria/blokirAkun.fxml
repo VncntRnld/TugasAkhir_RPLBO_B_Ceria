@@ -23,7 +23,7 @@
                   <Image url="@assets/img/kartu_kredit.png" />
                </image>
             </ImageView>
-            <Button layoutX="66.0" layoutY="224.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="190.0" text="BLOKIR">
+            <Button fx:id="buttonLanjut" layoutX="66.0" layoutY="224.0" mnemonicParsing="false" onAction="#toPIN" prefHeight="27.0" prefWidth="190.0" text="BLOKIR">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>

@@ -18,6 +18,8 @@ public class transferSesamaBankFavorit {
     private Button buttonBack;
     @FXML
     private Hyperlink buttonBaru;
+    @FXML
+    private Button buttonLanjut;
 
     public void toMenuTransfer(ActionEvent event) throws IOException {
         m.changeScene("menuTransfer.fxml");
@@ -25,5 +27,9 @@ public class transferSesamaBankFavorit {
 
     public void toTransferMenuSesamaBankBaru(ActionEvent event) throws IOException {
         m.changeScene("transferSesamaBank_Baru.fxml");
+    }
+
+    public void toPIN(ActionEvent event) throws IOException {
+        m.changeScene("pin.fxml");
     }
 }
