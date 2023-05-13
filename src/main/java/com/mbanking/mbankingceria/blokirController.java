@@ -14,9 +14,14 @@ public class blokirController {
 
     @FXML
     private Button buttonBack;
+    @FXML
+    private Button buttonLanjut;
 
     public void toMenuAkunSayaController(ActionEvent event) throws IOException{
         m.changeScene("menuAkunSaya.fxml");
+    }
+    public void toPIN(ActionEvent event) throws IOException {
+        m.changeScene("pin.fxml");
     }
 
 }
