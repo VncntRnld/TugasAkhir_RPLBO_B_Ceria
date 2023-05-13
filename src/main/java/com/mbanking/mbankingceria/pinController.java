@@ -29,8 +29,20 @@ public class pinController {
     }
 
     private void toBerhasil() throws IOException {
-        if (Data.scene.equals("transferSesamaBankFavorit")) {
-            m.changeScene("transfer_Berhasil.fxml");
+        if (Data.scene.equals("transfer")) {
+            m.changeScene("transferBerhasil.fxml");
+        }
+        else if (Data.scene.equals("listrik")) {
+            m.changeScene("ListrikBerhasil.fxml");
+        }
+        else if (Data.scene.equals("internet")) {
+            m.changeScene("InternetBerhasil.fxml");
+        }
+        else if (Data.scene.equals("blokir")) {
+            m.changeScene("blokirBerhasil.fxml");
+        }
+        else if (Data.scene.equals("limit")) {
+            m.changeScene("limitBerhasil.fxml");
         }
     }
 

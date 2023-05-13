@@ -31,7 +31,7 @@ public class transferSesamaBankFavorit {
     }
 
     public void toPIN(ActionEvent event) throws IOException {
-        Data.scene = "transferSesamaBankFavorit";
+        Data.scene = "transfer";
         m.changeScene("pin.fxml");
     }
 }

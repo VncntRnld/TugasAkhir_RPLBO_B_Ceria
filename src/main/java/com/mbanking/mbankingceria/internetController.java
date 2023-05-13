@@ -25,6 +25,7 @@ public class internetController {
     }
 
     public void toPIN(ActionEvent event) throws IOException {
+        Data.scene = "internet";
         m.changeScene("pin.fxml");
     }
 

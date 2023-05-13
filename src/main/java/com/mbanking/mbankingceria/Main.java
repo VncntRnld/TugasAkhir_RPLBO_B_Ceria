@@ -16,7 +16,7 @@ public class Main extends Application {
     public void start(Stage stage) throws IOException {
         stg = stage;
         stage.setResizable(false);
-        Parent root = FXMLLoader.load(getClass().getResource("mainMenu.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
         stage.setTitle("Ceria M-Banking");
         stage.setScene(new Scene(root, 320, 560));
         stage.show();

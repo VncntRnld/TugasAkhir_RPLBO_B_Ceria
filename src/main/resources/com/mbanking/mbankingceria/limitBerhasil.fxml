@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="560.0" prefWidth="320.0" styleClass="background" stylesheets="@assets/CSS/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mbanking.mbankingceria.blokirBerhasil">
+   <children>
+      <ImageView fitHeight="93.0" fitWidth="99.0" layoutX="152.0" layoutY="32.0" pickOnBounds="true" AnchorPane.leftAnchor="112.0" AnchorPane.topAnchor="-8.0">
+         <image>
+            <Image url="@assets/img/Logo.png" />
+         </image>
+      </ImageView>
+      <Circle fill="WHITE" layoutX="162.0" layoutY="234.0" radius="28.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label alignment="CENTER" layoutX="62.0" layoutY="288.0" prefHeight="56.0" prefWidth="198.0" text="PENGATURAN LIMIT&#10;BERHASIL" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonMainMenu" layoutX="67.0" layoutY="487.0" mnemonicParsing="false" onAction="#toMainMenu" prefHeight="25.0" prefWidth="189.0" text="Kembali ke Menu Utama" AnchorPane.leftAnchor="65.0" AnchorPane.topAnchor="495.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

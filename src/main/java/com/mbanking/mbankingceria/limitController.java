@@ -21,6 +21,7 @@ public class limitController {
     }
 
     public void toPIN(ActionEvent event) throws IOException {
+        Data.scene = "limit";
         m.changeScene("pin.fxml");
     }
 }

@@ -25,6 +25,7 @@ public class listrikController {
     }
 
     public void toPIN(ActionEvent event) throws IOException {
+        Data.scene = "listrik";
         m.changeScene("pin.fxml");
     }
 

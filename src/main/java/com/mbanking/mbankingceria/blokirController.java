@@ -21,6 +21,7 @@ public class blokirController {
         m.changeScene("menuAkunSaya.fxml");
     }
     public void toPIN(ActionEvent event) throws IOException {
+        Data.scene = "blokir";
         m.changeScene("pin.fxml");
     }
 

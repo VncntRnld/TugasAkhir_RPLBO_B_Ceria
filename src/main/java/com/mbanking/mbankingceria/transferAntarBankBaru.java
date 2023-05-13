@@ -31,6 +31,7 @@ public class transferAntarBankBaru {
     }
 
     public void toPIN(ActionEvent event) throws IOException {
+        Data.scene = "transfer";
         m.changeScene("pin.fxml");
     }
 

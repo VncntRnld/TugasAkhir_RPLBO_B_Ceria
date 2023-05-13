@@ -31,6 +31,7 @@ public class transferAntarBankFavorit {
     }
 
     public void toPIN(ActionEvent event) throws IOException {
+        Data.scene = "transfer";
         m.changeScene("pin.fxml");
     }
 }
