@@ -12,7 +12,6 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="320.0" styleClass="background" stylesheets="@assets/CSS/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mbanking.mbankingceria.transaksiBerhasil">
    <children>
       <Circle fill="#f3f7fb" layoutX="160.0" layoutY="103.0" radius="28.0" stroke="BLACK" strokeType="INSIDE" />
-      <Button layoutX="138.0" layoutY="439.0" mnemonicParsing="false" text="Unduh" />
       <Button fx:id="buttonMainMenu" layoutX="71.0" layoutY="474.0" mnemonicParsing="false" onAction="#toMainMenu" prefHeight="33.0" prefWidth="190.0" style="-fx-background-color: white;" text="Kembali ke Menu Utama">
          <font>
             <Font name="System Bold" size="12.0" />
