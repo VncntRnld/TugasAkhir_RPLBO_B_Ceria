@@ -16,7 +16,7 @@ public class Main extends Application {
     public void start(Stage stage) throws IOException {
         stg = stage;
         stage.setResizable(false);
-        Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("loginRegister/Login.fxml"));
         stage.setTitle("Ceria M-Banking");
         stage.setScene(new Scene(root, 320, 560));
         stage.show();
@@ -28,6 +28,14 @@ public class Main extends Application {
     }
 
     public static void main(String[] args) {
+        AkunData akunData = new AkunData();
+        Akun admin = new Akun("Vincent Ronald", "71210692", "9703", "Yogyakarta", "081235259418");
+        admin.setUsername("viro");
+        admin.setPassword("viro");
+        admin.setPIN("560656");
+
+        akunData.addAkun(admin);
+
         launch();
     }
 

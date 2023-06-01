@@ -23,16 +23,19 @@ public class LoginController {
     @FXML
     private Hyperlink toRegister;
     Main m = new Main();
+    private AkunData akunData = new AkunData();
 
     public void userLogIn(ActionEvent event) throws IOException {
         checkLogIn();
     }
 
     private void checkLogIn() throws IOException {
-        if (username.getText().toString().equals("Admin") && password.getText().toString().equals("admin")){
+        //Verify if account is stored in AkunData
+        if (akunData.verifyAkun(username.getText(), password.getText())){
+            Data.akun = akunData.getAkun(username.getText());
             m.changeScene("mainMenu.fxml");
         }
-        else if (username.getText().isEmpty() && password.getText().isEmpty()){
+        else if (username.getText().isEmpty() || password.getText().isEmpty()){
             loginMsg.setText("Please enter your data");
         }
         else {

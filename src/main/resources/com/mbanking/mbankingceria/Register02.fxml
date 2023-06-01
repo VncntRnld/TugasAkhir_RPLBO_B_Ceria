@@ -60,5 +60,10 @@
             <Font name="System Bold" size="11.0" />
          </font>
       </Hyperlink>
+      <Label fx:id="warning02" alignment="CENTER" layoutX="131.0" layoutY="380.0" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
