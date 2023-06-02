@@ -27,19 +27,19 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <TextField layoutX="43.0" layoutY="162.0" prefHeight="25.0" prefWidth="233.0" />
+      <TextField fx:id="inputID" layoutX="43.0" layoutY="162.0" prefHeight="25.0" prefWidth="233.0" />
       <Label layoutX="43.0" layoutY="198.0" text="Nomor Telepon" textFill="WHITE">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <TextField layoutX="43.0" layoutY="218.0" prefHeight="25.0" prefWidth="233.0" />
+      <TextField fx:id="inputNoTelp" layoutX="43.0" layoutY="218.0" prefHeight="25.0" prefWidth="233.0" />
       <Label layoutX="43.0" layoutY="254.0" text="Nominal" textFill="WHITE">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <TextField layoutX="43.0" layoutY="274.0" prefHeight="25.0" prefWidth="233.0" />
+      <TextField fx:id="inputNominal" layoutX="43.0" layoutY="274.0" prefHeight="25.0" prefWidth="233.0" />
       <Button fx:id="buttonLanjut" layoutX="43.0" layoutY="487.0" mnemonicParsing="false" onAction="#toPIN" prefHeight="27.0" prefWidth="235.0" text="LANJUT">
          <font>
             <Font name="System Bold" size="12.0" />

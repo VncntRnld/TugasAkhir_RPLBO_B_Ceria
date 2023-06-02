@@ -4,6 +4,7 @@ import com.mbanking.mbankingceria.Model.Data;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 
 import java.io.IOException;
 
@@ -20,6 +21,12 @@ public class listrikController {
 
     @FXML
     private Button buttonLanjut;
+
+    @FXML
+    private TextField inputID;
+
+    @FXML
+    private TextField inputNominal;
 
     public void toMenuPayment(ActionEvent event) throws IOException {
         application.changeScene("menuPayment.fxml");
