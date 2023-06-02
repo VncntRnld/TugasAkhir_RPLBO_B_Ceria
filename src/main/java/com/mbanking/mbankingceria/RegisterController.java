@@ -75,6 +75,9 @@ public class RegisterController {
         if (inputUsername.getText().isEmpty() || inputPassword.getText().isEmpty() || inputPIN.getText().isEmpty()) {
             warning02.setText("Please enter your data..");
         }
+        /*else if (akunData.verifyUsername(inputUsername.getText())){
+            warning02.setText("Username has already taken");
+        }*/
         else if (!inputPassword.getText().equals(inputConfirm.getText())){
             warning02.setText("Password do NOT match!");
         }

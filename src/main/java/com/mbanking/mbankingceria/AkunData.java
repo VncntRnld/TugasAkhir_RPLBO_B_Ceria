@@ -16,6 +16,10 @@ public class AkunData {
         return akunMap.get(username);
     }
 
+    public void deleteAkun(String username) {
+        akunMap.remove(username);
+    }
+
     public Boolean verifyAkun(String username, String password){
         Akun verifAkun = getAkun(username);
         return verifAkun != null && verifAkun.getPassword().equals(password);
@@ -23,5 +27,9 @@ public class AkunData {
 
     public Boolean verifyPIN(String pin){
         return getAkun(Data.akun.getPIN()).equals(pin);
+    }
+
+    public Boolean verifyUsername(String username) {
+        return getAkun(username) == null;
     }
 }

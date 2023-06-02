@@ -16,12 +16,12 @@
          </image>
       </ImageView>
       <Circle fill="WHITE" layoutX="162.0" layoutY="234.0" radius="28.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label alignment="CENTER" layoutX="62.0" layoutY="288.0" prefHeight="56.0" prefWidth="198.0" text="BLOKIR AKUN&#10;BERHASIL" textAlignment="CENTER" textFill="WHITE">
+      <Label alignment="CENTER" layoutX="60.0" layoutY="280.0" prefHeight="56.0" prefWidth="198.0" text="BLOKIR AKUN&#10;BERHASIL" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Button fx:id="buttonMainMenu" layoutX="67.0" layoutY="487.0" mnemonicParsing="false" onAction="#toMainMenu" prefHeight="25.0" prefWidth="189.0" text="Kembali ke Menu Utama" AnchorPane.leftAnchor="65.0" AnchorPane.topAnchor="495.0">
+      <Button fx:id="logout" layoutX="65.0" layoutY="465.0" mnemonicParsing="false" onAction="#logout" prefHeight="25.0" prefWidth="189.0" text="Logout" AnchorPane.leftAnchor="65.0" AnchorPane.topAnchor="465.0">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
