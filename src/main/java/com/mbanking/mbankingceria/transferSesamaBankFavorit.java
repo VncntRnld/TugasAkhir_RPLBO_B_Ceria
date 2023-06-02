@@ -1,11 +1,10 @@
 package com.mbanking.mbankingceria;
 
+import com.mbanking.mbankingceria.Model.Data;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.Hyperlink;
+import javafx.scene.control.*;
 
-import java.io.DataInput;
 import java.io.IOException;
 
 public class transferSesamaBankFavorit {
@@ -21,6 +20,14 @@ public class transferSesamaBankFavorit {
     private Hyperlink buttonBaru;
     @FXML
     private Button buttonLanjut;
+    @FXML
+    private ChoiceBox<String> inputNama;
+    @FXML
+    private TextField inputNoRek;
+    @FXML
+    private TextField inputNominal;
+    @FXML
+    private TextField inputBerita;
 
     public void toMenuTransfer(ActionEvent event) throws IOException {
         application.changeScene("menuTransfer.fxml");

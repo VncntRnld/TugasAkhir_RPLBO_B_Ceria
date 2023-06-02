@@ -1,4 +1,4 @@
-package com.mbanking.mbankingceria;
+package com.mbanking.mbankingceria.Model;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -32,4 +32,5 @@ public class AkunData {
     public Boolean verifyUsername(String username) {
         return getAkun(username) == null;
     }
+
 }

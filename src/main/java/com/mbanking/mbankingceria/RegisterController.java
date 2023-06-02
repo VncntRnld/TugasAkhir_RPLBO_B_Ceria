@@ -1,5 +1,8 @@
 package com.mbanking.mbankingceria;
 
+import com.mbanking.mbankingceria.Model.AkunCeria;
+import com.mbanking.mbankingceria.Model.AkunData;
+import com.mbanking.mbankingceria.Model.Data;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
@@ -49,7 +52,7 @@ public class RegisterController {
 
     // 03
     private AkunData akunData = new AkunData();
-    private Akun akunBaru;
+    private AkunCeria akunBaru;
 
     public void moveSignIn(ActionEvent event) throws IOException {
         application.changeScene("Login.fxml");
@@ -60,7 +63,7 @@ public class RegisterController {
             warning01.setText("Please enter your data..");
         }
         else {
-            akunBaru = new Akun(inputNama.getText(), inputNIK.getText(), inputTglLahir.getText(), inputDomisili.getText(), inputNoTelp.getText());
+            akunBaru = new AkunCeria(inputNama.getText(), inputNIK.getText(), inputTglLahir.getText(), inputDomisili.getText(), inputNoTelp.getText());
             Data.akun = akunBaru;
             application.changeScene("Register02.fxml");
         }
@@ -71,13 +74,12 @@ public class RegisterController {
     }
 
     public void submitForm(ActionEvent event) throws IOException {
-
         if (inputUsername.getText().isEmpty() || inputPassword.getText().isEmpty() || inputPIN.getText().isEmpty()) {
             warning02.setText("Please enter your data..");
         }
-        /*else if (akunData.verifyUsername(inputUsername.getText())){
+        else if (akunData.verifyUsername(inputUsername.getText())){
             warning02.setText("Username has already taken");
-        }*/
+        }
         else if (!inputPassword.getText().equals(inputConfirm.getText())){
             warning02.setText("Password do NOT match!");
         }
@@ -93,8 +95,5 @@ public class RegisterController {
 
             application.changeScene("loginRegister/Login.fxml");
         }
-
     }
-
-
 }

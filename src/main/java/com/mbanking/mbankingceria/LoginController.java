@@ -1,5 +1,8 @@
 package com.mbanking.mbankingceria;
 
+import com.mbanking.mbankingceria.Model.AkunCeria;
+import com.mbanking.mbankingceria.Model.AkunData;
+import com.mbanking.mbankingceria.Model.Data;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
@@ -33,7 +36,7 @@ public class LoginController {
     private void checkLogIn() throws IOException {
         //Verify if account is stored in AkunData
         if (akunData.verifyAkun(username.getText(), password.getText())){
-            Data.akun = akunData.getAkun(username.getText());
+            Data.akun = (AkunCeria) akunData.getAkun(username.getText());
             application.changeScene("mainMenu.fxml");
         }
         else if (username.getText().isEmpty() || password.getText().isEmpty()){

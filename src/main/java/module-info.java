@@ -6,4 +6,6 @@ module com.mbanking.mbankingceria {
 
     opens com.mbanking.mbankingceria to javafx.fxml;
     exports com.mbanking.mbankingceria;
+    exports com.mbanking.mbankingceria.Model;
+    opens com.mbanking.mbankingceria.Model to javafx.fxml;
 }

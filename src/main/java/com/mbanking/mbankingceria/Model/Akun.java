@@ -1,8 +1,8 @@
-package com.mbanking.mbankingceria;
+package com.mbanking.mbankingceria.Model;
 
 import java.util.Random;
 
-public class Akun {
+public abstract class Akun {
     private String namaNasabah;
     private String NIK;
     private String tglLahir;
@@ -12,9 +12,11 @@ public class Akun {
     private String password;
     private String PIN;
 
+
     // rekening
     private String noRek;
     private long saldo;
+    private long limit;
 
     public Akun(String namaNasabah, String NIK, String tglLahir, String domisili, String noHP) {
         this.namaNasabah = namaNasabah;
@@ -25,6 +27,7 @@ public class Akun {
         //rekening
         this.noRek = setNoRek();
         this.saldo = 100_000;
+        this.limit = 5_000_000;
     }
 
     public String getNamaNasabah() {
@@ -113,4 +116,11 @@ public class Akun {
     public long getSaldo() {
         return saldo;
     }
+
+    public long getLimit() { return limit; }
+
+    public void setLimit(long limit) { this.limit = limit; }
+
+    // buat di Override
+    public abstract void transfer(String tujuan, long nominal);
 }

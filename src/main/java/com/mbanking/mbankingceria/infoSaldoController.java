@@ -1,5 +1,6 @@
 package com.mbanking.mbankingceria;
 
+import com.mbanking.mbankingceria.Model.Data;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
