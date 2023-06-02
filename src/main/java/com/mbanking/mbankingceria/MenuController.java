@@ -15,7 +15,11 @@ public class MenuController implements Initializable {
 
     Main m = new Main();
     @FXML
+    private Button logout;
+    @FXML
     private Label labelNama;
+    @FXML
+    private Label labelNoRek;
     @FXML
     private Button buttonInfo;
     @FXML
@@ -27,15 +31,12 @@ public class MenuController implements Initializable {
 
     public void initialize(URL location, ResourceBundle resources) {
         // Jalan kalau ganti scene
-        try {
-            renderInfo();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+        renderInfo();
     }
 
-    public void renderInfo() throws IOException {
+    public void renderInfo(){
         labelNama.setText(Data.akun.getNamaNasabah());
+        labelNoRek.setText(Data.akun.getNoRek());
     }
 
     public void toTransfer(ActionEvent event) throws IOException {
@@ -53,4 +54,10 @@ public class MenuController implements Initializable {
     public void toPayment(ActionEvent event) throws IOException {
         m.changeScene("menuPayment.fxml");
     }
+
+    public void logout(ActionEvent event) throws  IOException {
+        Data.akun = null;
+        m.changeScene("loginRegister/login.fxml");
+    }
+
 }

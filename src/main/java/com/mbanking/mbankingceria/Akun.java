@@ -1,5 +1,7 @@
 package com.mbanking.mbankingceria;
 
+import java.util.Random;
+
 public class Akun {
     private String namaNasabah;
     private String NIK;
@@ -10,12 +12,19 @@ public class Akun {
     private String password;
     private String PIN;
 
+    // rekening
+    private String noRek;
+    private long saldo;
+
     public Akun(String namaNasabah, String NIK, String tglLahir, String domisili, String noHP) {
         this.namaNasabah = namaNasabah;
         this.NIK = NIK;
         this.tglLahir = tglLahir;
         this.domisili = domisili;
         this.noHP = noHP;
+        //rekening
+        this.noRek = setNoRek();
+        this.saldo = 100_000;
     }
 
     public String getNamaNasabah() {
@@ -80,5 +89,28 @@ public class Akun {
 
     public void setPIN(String PIN) {
         this.PIN = PIN;
+    }
+
+    private String setNoRek(){
+        int m = (int) Math.pow(10, 8 - 1);
+        m = m + new Random().nextInt(9 * m);
+        return String.valueOf(m);
+    }
+
+    public void setNoRek(String noRek) {
+        // Buat Test..
+        this.noRek = noRek;
+    }
+
+    public String getNoRek() {
+        return noRek;
+    }
+
+    public void setSaldo(long saldo) {
+        this.saldo = saldo;
+    }
+
+    public long getSaldo() {
+        return saldo;
     }
 }

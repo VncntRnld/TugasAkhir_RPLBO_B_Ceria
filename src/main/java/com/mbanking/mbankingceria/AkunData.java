@@ -21,7 +21,7 @@ public class AkunData {
         return verifAkun != null && verifAkun.getPassword().equals(password);
     }
 
-    /*public Boolean verifyPIN(String pin){
-        return getAkun(Data.)
-    }*/
+    public Boolean verifyPIN(String pin){
+        return getAkun(Data.akun.getPIN()).equals(pin);
+    }
 }
