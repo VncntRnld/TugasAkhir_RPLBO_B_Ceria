@@ -32,17 +32,15 @@
             <Font name="System Bold" size="16.0" />
          </font>
       </Hyperlink>
-      <TextField layoutX="41.0" layoutY="186.0" prefHeight="0.0" prefWidth="239.0" />
-      <ChoiceBox layoutX="41.0" layoutY="139.0" prefHeight="11.0" prefWidth="239.0" />
+      <TextField fx:id="inputNoRek" layoutX="41.0" layoutY="186.0" prefHeight="0.0" prefWidth="239.0" />
+      <ChoiceBox fx:id="inputNama" layoutX="41.0" layoutY="139.0" prefHeight="11.0" prefWidth="239.0" />
       <Label layoutX="42.0" layoutY="120.0" text="Nama Penerima" textFill="WHITE" />
       <Label layoutX="41.0" layoutY="169.0" text="Nomor Rekening" textFill="WHITE" />
-      <ChoiceBox layoutX="41.0" layoutY="261.0" prefHeight="11.0" prefWidth="239.0" />
-      <Label layoutX="42.0" layoutY="242.0" text="Sumber Rekening" textFill="WHITE" />
-      <TextField layoutX="41.0" layoutY="352.0" prefHeight="0.0" prefWidth="239.0" />
-      <Label layoutX="41.0" layoutY="335.0" text="Berita/Keterangan (opsional)" textFill="WHITE" />
-      <TextField layoutX="41.0" layoutY="307.0" prefHeight="0.0" prefWidth="239.0" />
-      <Label layoutX="41.0" layoutY="290.0" text="Nominal" textFill="WHITE" />
-      <Label layoutX="40.0" layoutY="391.0" prefHeight="34.0" prefWidth="239.0" text="*Transfer Antarbank akan dikenakan biaya admin sebesar Rp 2500" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+      <TextField fx:id="inputBerita" layoutX="40.0" layoutY="276.0" prefHeight="0.0" prefWidth="239.0" AnchorPane.leftAnchor="40.0" />
+      <Label layoutX="40.0" layoutY="259.0" text="Berita/Keterangan (opsional)" textFill="WHITE" AnchorPane.leftAnchor="40.0" />
+      <TextField fx:id="inputNominal" layoutX="40.0" layoutY="231.0" prefHeight="0.0" prefWidth="239.0" AnchorPane.leftAnchor="40.0" />
+      <Label layoutX="40.0" layoutY="214.0" text="Nominal" textFill="WHITE" AnchorPane.leftAnchor="40.0" />
+      <Label layoutX="42.0" layoutY="445.0" prefHeight="34.0" prefWidth="239.0" text="*Transfer Antarbank akan dikenakan biaya admin sebesar Rp 2500" textAlignment="CENTER" textFill="WHITE" wrapText="true" AnchorPane.leftAnchor="40.0">
          <font>
             <Font size="10.0" />
          </font>

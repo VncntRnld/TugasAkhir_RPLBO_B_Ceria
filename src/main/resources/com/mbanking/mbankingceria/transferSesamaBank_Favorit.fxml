@@ -32,16 +32,14 @@
             <Font name="System Bold" size="16.0" />
          </font>
       </Hyperlink>
-      <TextField layoutX="41.0" layoutY="186.0" prefHeight="0.0" prefWidth="239.0" />
-      <ChoiceBox layoutX="41.0" layoutY="139.0" prefHeight="11.0" prefWidth="239.0" />
+      <TextField fx:id="inputNoRek" layoutX="41.0" layoutY="186.0" prefHeight="0.0" prefWidth="239.0" />
+      <ChoiceBox fx:id="inputNama" layoutX="41.0" layoutY="139.0" prefHeight="11.0" prefWidth="239.0" />
       <Label layoutX="42.0" layoutY="120.0" text="Nama Penerima" textFill="WHITE" />
       <Label layoutX="41.0" layoutY="169.0" text="Nomor Rekening" textFill="WHITE" />
-      <ChoiceBox layoutX="41.0" layoutY="261.0" prefHeight="11.0" prefWidth="239.0" />
-      <Label layoutX="42.0" layoutY="242.0" text="Sumber Rekening" textFill="WHITE" />
-      <TextField layoutX="41.0" layoutY="352.0" prefHeight="0.0" prefWidth="239.0" />
-      <Label layoutX="41.0" layoutY="335.0" text="Berita/Keterangan (opsional)" textFill="WHITE" />
-      <TextField layoutX="41.0" layoutY="307.0" prefHeight="0.0" prefWidth="239.0" />
-      <Label layoutX="41.0" layoutY="290.0" text="Nominal" textFill="WHITE" />
+      <TextField fx:id="inputBerita" layoutX="42.0" layoutY="277.0" prefHeight="0.0" prefWidth="239.0" AnchorPane.leftAnchor="40.0" />
+      <Label layoutX="42.0" layoutY="260.0" text="Berita/Keterangan (opsional)" textFill="WHITE" AnchorPane.leftAnchor="40.0" />
+      <TextField fx:id="inputNominal" layoutX="42.0" layoutY="232.0" prefHeight="0.0" prefWidth="239.0" AnchorPane.leftAnchor="40.0" />
+      <Label layoutX="42.0" layoutY="215.0" text="Nominal" textFill="WHITE" AnchorPane.leftAnchor="40.0" />
       <Button fx:id="buttonLanjut" layoutX="41.0" layoutY="466.0" mnemonicParsing="false" onAction="#toPIN" prefHeight="27.0" prefWidth="239.0" text="LANJUT" AnchorPane.bottomAnchor="44.8">
          <font>
             <Font name="System Bold" size="12.0" />

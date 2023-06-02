@@ -18,33 +18,31 @@
       <Label layoutX="34.0" layoutY="199.0" text="Nama Penerima " textFill="#fff6f6" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="200.0" />
       <Label layoutX="34.0" layoutY="219.0" text="Tanggal Transaksi" textFill="WHITE" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="220.0" />
       <Label layoutX="34.0" layoutY="238.0" text="Waktu Transaksi" textFill="WHITE" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="240.0" />
-      <Label layoutX="34.0" layoutY="256.0" text="Email Penerima" textFill="WHITE" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="260.0" />
-      <Label layoutX="34.0" layoutY="274.0" text="Bank Penerima" textFill="#f8f8f8" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="280.0" />
+      <Label layoutX="34.0" layoutY="274.0" text="Bank Penerima" textFill="#f8f8f8" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="260.0" />
       <Label layoutX="215.0" layoutY="180.0" text="11234566651" textAlignment="RIGHT" textFill="WHITE" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="180.0" />
       <Label layoutX="192.0" layoutY="199.0" text="Sdr BAGUS COYO" textFill="WHITE" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="200.0" />
       <Label layoutX="224.0" layoutY="219.0" text="26-12-2023" textFill="WHITE" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="220.0" />
       <Label layoutX="241.00000000000003" layoutY="238.0" text="21:22:03" textFill="WHITE" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="240.0" />
-      <Label layoutX="266.0" layoutY="256.0" text="-" textFill="WHITE" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="260.0" />
-      <Label layoutX="259.0" layoutY="274.0" text="Ceria" textFill="WHITE" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="280.0" />
+      <Label layoutX="259.0" layoutY="274.0" text="Ceria" textFill="WHITE" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="260.0" />
       <Label alignment="CENTER" layoutX="41.0" layoutY="143.0" prefHeight="20.0" prefWidth="240.0" text="TRANSAKSI TRANSFER BERHASIL" textFill="WHITE" AnchorPane.leftAnchor="41.0" AnchorPane.rightAnchor="39.0">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="34.0" layoutY="328.0" text="Nominal " textFill="WHITE" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="330.0" />
-      <Label layoutX="34.0" layoutY="346.0" text="Biaya Admin" textFill="WHITE" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="350.0" />
-      <Label layoutX="34.0" layoutY="365.0" text="Total" textFill="WHITE" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="370.0" />
-      <Label layoutX="34.0" layoutY="382.0" text="Keterangan " textFill="WHITE" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="390.0" />
-      <Label layoutX="244.0" layoutY="328.0" text="100.000" textFill="WHITE" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="330.0" />
-      <Label layoutX="279.3333333333333" layoutY="346.0" text="0" textFill="#fffafa" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="350.0" />
-      <Label layoutX="244.0" layoutY="365.0" text="100.000" textFill="WHITE" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="370.0" />
-      <Label layoutX="250.0" layoutY="388.0" text="Katsu2" textFill="WHITE" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="390.0" />
+      <Label layoutX="34.0" layoutY="328.0" text="Nominal " textFill="WHITE" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="310.0" />
+      <Label layoutX="34.0" layoutY="346.0" text="Biaya Admin" textFill="WHITE" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="330.0" />
+      <Label layoutX="34.0" layoutY="365.0" text="Total" textFill="WHITE" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="350.0" />
+      <Label layoutX="34.0" layoutY="382.0" text="Keterangan " textFill="WHITE" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="370.0" />
+      <Label layoutX="244.0" layoutY="328.0" text="100.000" textFill="WHITE" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="310.0" />
+      <Label layoutX="279.3333333333333" layoutY="346.0" text="0" textFill="#fffafa" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="330.0" />
+      <Label layoutX="244.0" layoutY="365.0" text="100.000" textFill="WHITE" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="350.0" />
+      <Label layoutX="250.0" layoutY="388.0" text="Katsu2" textFill="WHITE" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="370.0" />
       <ImageView fitHeight="93.0" fitWidth="99.0" layoutX="122.0" layoutY="2.0" pickOnBounds="true" AnchorPane.leftAnchor="112.0" AnchorPane.topAnchor="-8.0">
          <image>
             <Image url="@assets/img/Logo.png" />
          </image>
       </ImageView>
-      <Separator layoutX="32.0" layoutY="313.0" prefHeight="2.0" prefWidth="253.0" AnchorPane.leftAnchor="34.0" />
+      <Separator layoutX="32.0" layoutY="313.0" prefHeight="2.0" prefWidth="253.0" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="300.0" />
       <ImageView fitHeight="50.0" fitWidth="42.0" layoutX="139.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@assets/img/iconBerhasil.png" />

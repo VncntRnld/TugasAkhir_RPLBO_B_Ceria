@@ -25,6 +25,8 @@ public class transferSesamaBankBaru {
     @FXML
     private TextField inputNoRek;
     @FXML
+    private CheckBox cekFavorit;
+    @FXML
     private TextField inputNominal;
     @FXML
     private TextField inputBerita;

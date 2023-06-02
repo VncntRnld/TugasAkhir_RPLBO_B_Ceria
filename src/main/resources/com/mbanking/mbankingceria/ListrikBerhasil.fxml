@@ -17,30 +17,24 @@
          <font>
             <Font name="System Bold" size="13.0" />
          </font></Label>
-      <Label layoutX="34.0" layoutY="200.0" text="NO METER" textFill="WHITE" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="200.0" />
-      <Label layoutX="34.0" layoutY="217.0" text="ID Pelanggan" textFill="WHITE" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="220.0" />
-      <Label layoutX="34.0" layoutY="234.0" text="Nama" textFill="WHITE" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="240.0" />
-      <Label layoutX="34.0" layoutY="251.0" text="Tarif Daya " textFill="WHITE" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="260.0" />
-      <Label layoutX="34.0" layoutY="270.0" text="Bayar" textFill="WHITE" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="280.0" />
-      <Label layoutX="34.0" layoutY="290.0" text="Materai" textFill="WHITE" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="300.0" />
-      <Label layoutX="34.0" layoutY="351.0" text="RP Token " textFill="WHITE" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="340.0" />
-      <Label layoutX="34.0" layoutY="370.0" text="KWH" textFill="WHITE" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="360.0" />
-      <Label layoutX="34.0" layoutY="392.0" text="Token" textFill="WHITE" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="380.0" />
-      <Label layoutX="34.0" layoutY="412.0" text="Admin" textFill="WHITE" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="400.0" />
-      <Label layoutX="34.0" layoutY="431.0" text="Tanggal/Waktu" textFill="WHITE" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="420.0" />
-      <Label layoutX="208.0" layoutY="198.0" text=" 123456789098" textFill="WHITE" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="200.0" />
-      <Label layoutX="208.0" layoutY="215.0" text="12345678909876" textFill="WHITE" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="220.0" />
-      <Label layoutX="208.0" layoutY="232.0" text="Dhea Angeline" textFill="WHITE" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="240.0" />
-      <Label layoutX="208.0" layoutY="249.0" text="R1/300 VA" textFill="WHITE" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="260.0" />
-      <Label layoutX="208.0" layoutY="268.0" text="100.000" textFill="WHITE" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="280.0" />
-      <Label layoutX="208.0" layoutY="288.0" text="Materai" textFill="WHITE" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="300.0" />
-      <Label layoutX="232.0" layoutY="349.0" text="95.454" textFill="WHITE" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="340.0" />
-      <Label layoutX="234.0" layoutY="368.0" text="61.0" textFill="WHITE" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="360.0" />
-      <Label layoutX="253.0" layoutY="390.0" text="123 2345 3321 5657 0987" textFill="WHITE" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="380.0" />
-      <Label layoutX="250.0" layoutY="411.0" text="3.000" textFill="WHITE" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="400.0" />
-      <Label layoutX="204.0" layoutY="429.0" text="12-03-2023 12:52:09" textFill="WHITE" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="420.0" />
-      <Label layoutX="34.0" layoutY="325.0" text="Pajak" textFill="WHITE" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="320.0" />
-      <Label layoutX="259.0" layoutY="326.0" text="4.546" textFill="WHITE" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="320.0" />
+      <Label layoutX="34.0" layoutY="200.0" text="NO METER" textFill="WHITE" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="200.0" />
+      <Label layoutX="34.0" layoutY="217.0" text="ID Pelanggan" textFill="WHITE" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="220.0" />
+      <Label layoutX="34.0" layoutY="234.0" text="Nama" textFill="WHITE" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="240.0" />
+      <Label layoutX="34.0" layoutY="270.0" text="Pembelian" textFill="WHITE" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="280.0" />
+      <Label layoutX="34.0" layoutY="351.0" text="RP Token " textFill="WHITE" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="300.0" />
+      <Label layoutX="34.0" layoutY="392.0" text="Token" textFill="WHITE" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="360.0" />
+      <Label layoutX="34.0" layoutY="412.0" text="Admin" textFill="WHITE" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="340.0" />
+      <Label layoutX="34.0" layoutY="431.0" text="Tanggal/Waktu" textFill="WHITE" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="260.0" />
+      <Label layoutX="208.0" layoutY="198.0" text=" 123456789098" textFill="WHITE" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="200.0" />
+      <Label layoutX="208.0" layoutY="215.0" text="12345678909876" textFill="WHITE" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="220.0" />
+      <Label layoutX="208.0" layoutY="232.0" text="Dhea Angelina" textFill="WHITE" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="240.0" />
+      <Label layoutX="208.0" layoutY="268.0" text="100.000" textFill="WHITE" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="280.0" />
+      <Label layoutX="232.0" layoutY="349.0" text="95.454" textFill="WHITE" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="300.0" />
+      <Label layoutX="253.0" layoutY="390.0" text="123 2345 3321 5657 0987" textFill="WHITE" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="360.0" />
+      <Label layoutX="250.0" layoutY="411.0" text="3.000" textFill="WHITE" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="340.0" />
+      <Label layoutX="204.0" layoutY="429.0" text="12-03-2023 12:52:09" textFill="WHITE" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="260.0" />
+      <Label layoutX="34.0" layoutY="325.0" text="Pajak" textFill="WHITE" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="320.0" />
+      <Label layoutX="259.0" layoutY="326.0" text="4.546" textFill="WHITE" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="320.0" />
       <ImageView fitHeight="93.0" fitWidth="99.0" layoutX="142.0" layoutY="22.0" pickOnBounds="true" AnchorPane.leftAnchor="112.0" AnchorPane.topAnchor="-8.0">
          <image>
             <Image url="@assets/img/Logo.png" />
