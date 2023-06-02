@@ -12,7 +12,7 @@ public class internetController {
 
     }
 
-    Main m = new Main();
+    MBankingApplication application = MBankingApplication.getInstance();
 
     @FXML
     private Button buttonBack;
@@ -21,12 +21,12 @@ public class internetController {
     private Button buttonLanjut;
 
     public void toMenuPayment(ActionEvent event) throws IOException {
-        m.changeScene("menuPayment.fxml");
+        application.changeScene("menuPayment.fxml");
     }
 
     public void toPIN(ActionEvent event) throws IOException {
         Data.scene = "internet";
-        m.changeScene("pin.fxml");
+        application.changeScene("pin.fxml");
     }
 
 }

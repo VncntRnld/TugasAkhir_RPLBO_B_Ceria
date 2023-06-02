@@ -1,30 +1,36 @@
 package com.mbanking.mbankingceria;
 
-        import javafx.application.Application;
-        import javafx.fxml.FXMLLoader;
-        import javafx.scene.Parent;
-        import javafx.scene.Scene;
-        import javafx.stage.Stage;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
-        import java.io.IOException;
+import java.io.IOException;
 
-public class Main extends Application {
+public class MBankingApplication extends Application {
 
     private static Stage stg;
+    private static MBankingApplication mBankingApplication;
 
     @Override
     public void start(Stage stage) throws IOException {
+        mBankingApplication = this;
         stg = stage;
         stage.setResizable(false);
-        Parent root = FXMLLoader.load(getClass().getResource("loginRegister/Login.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(MBankingApplication.class.getResource("loginRegister/Login.fxml"));
         stage.setTitle("Ceria M-Banking");
-        stage.setScene(new Scene(root, 320, 560));
+        stage.setScene(new Scene(fxmlLoader.load(), 320, 560));
         stage.show();
     }
 
     public void changeScene(String fxml) throws IOException {
         Parent pane = FXMLLoader.load(getClass().getResource(fxml));
         stg.getScene().setRoot(pane);
+    }
+
+    public static MBankingApplication getInstance(){
+        return mBankingApplication;
     }
 
     public static void main(String[] args) {
@@ -40,7 +46,7 @@ public class Main extends Application {
         Akun admin02 = new Akun("Dhea Angelina", "71210693", "9704", "Yogyakarta", "081235259418");
         admin02.setUsername("deha");
         admin02.setPassword("deha");
-        admin02.setPIN("553517");
+        admin02.setPIN("232323");
         //Buat admin, 8 digit
         admin02.setNoRek("00000002");
 

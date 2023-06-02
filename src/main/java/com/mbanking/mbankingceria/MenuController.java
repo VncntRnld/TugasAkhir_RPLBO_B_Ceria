@@ -13,7 +13,7 @@ import java.util.ResourceBundle;
 
 public class MenuController implements Initializable {
 
-    Main m = new Main();
+    MBankingApplication application = MBankingApplication.getInstance();
     @FXML
     private Button logout;
     @FXML
@@ -40,24 +40,24 @@ public class MenuController implements Initializable {
     }
 
     public void toTransfer(ActionEvent event) throws IOException {
-        m.changeScene("menuTransfer.fxml");
+        application.changeScene("menuTransfer.fxml");
     }
 
     public void toAkunSaya(ActionEvent event) throws IOException {
-        m.changeScene("menuAkunSaya.fxml");
+        application.changeScene("menuAkunSaya.fxml");
     }
 
     public void toInfo(ActionEvent event) throws IOException {
-        m.changeScene("menuInfoRekening.fxml");
+        application.changeScene("menuInfoRekening.fxml");
     }
 
     public void toPayment(ActionEvent event) throws IOException {
-        m.changeScene("menuPayment.fxml");
+        application.changeScene("menuPayment.fxml");
     }
 
     public void logout(ActionEvent event) throws  IOException {
         Data.akun = null;
-        m.changeScene("loginRegister/login.fxml");
+        application.changeScene("loginRegister/login.fxml");
     }
 
 }

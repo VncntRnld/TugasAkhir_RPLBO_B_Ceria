@@ -13,7 +13,7 @@ public class blokirBerhasil implements Initializable {
     public blokirBerhasil(){
 
     }
-    Main m = new Main();
+    MBankingApplication application = MBankingApplication.getInstance();
     AkunData akunData = new AkunData();
 
     @FXML
@@ -31,6 +31,6 @@ public class blokirBerhasil implements Initializable {
     }
 
     public void logout(ActionEvent event) throws IOException {
-        m.changeScene("loginRegister/login.fxml");
+        application.changeScene("loginRegister/login.fxml");
     }
 }

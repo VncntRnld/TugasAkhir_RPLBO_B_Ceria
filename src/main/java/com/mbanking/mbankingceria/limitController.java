@@ -9,7 +9,7 @@ import java.io.IOException;
 public class limitController {
     public limitController(){
     }
-    Main m = new Main();
+    MBankingApplication application = MBankingApplication.getInstance();
 
     @FXML
     private Button buttonBack;
@@ -17,11 +17,11 @@ public class limitController {
     private Button buttonLanjut;
 
     public void toMenuAkunSayaController(ActionEvent event) throws IOException {
-        m.changeScene("menuAkunSaya.fxml");
+        application.changeScene("menuAkunSaya.fxml");
     }
 
     public void toPIN(ActionEvent event) throws IOException {
         Data.scene = "limit";
-        m.changeScene("pin.fxml");
+        application.changeScene("pin.fxml");
     }
 }

@@ -13,7 +13,7 @@ public class menuTransferController {
 
     }
 
-    Main m = new Main();
+    MBankingApplication application = MBankingApplication.getInstance();
 
     @FXML
     private Button buttonAntarBank;
@@ -25,15 +25,15 @@ public class menuTransferController {
     private Button buttonBack;
 
     public void toAntarBank(ActionEvent event) throws IOException {
-        m.changeScene("transferAntarBank_Baru.fxml");
+        application.changeScene("transferAntarBank_Baru.fxml");
 
     }
     public void toSesamaBank(ActionEvent event) throws IOException {
-        m.changeScene("transferSesamaBank_Baru.fxml");
+        application.changeScene("transferSesamaBank_Baru.fxml");
     }
 
     public void toMainMenu(ActionEvent event) throws IOException{
-        m.changeScene("mainMenu.fxml");
+        application.changeScene("mainMenu.fxml");
     }
 
 }

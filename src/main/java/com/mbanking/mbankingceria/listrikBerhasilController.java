@@ -10,12 +10,12 @@ public class listrikBerhasilController {
     public listrikBerhasilController(){
 
     }
-    Main m = new Main();
+    MBankingApplication application = MBankingApplication.getInstance();
 
     @FXML
     private Button buttonMainMenu;
 
     public void toMainMenu(ActionEvent event) throws IOException {
-        m.changeScene("mainMenu.fxml");
+        application.changeScene("mainMenu.fxml");
     }
 }

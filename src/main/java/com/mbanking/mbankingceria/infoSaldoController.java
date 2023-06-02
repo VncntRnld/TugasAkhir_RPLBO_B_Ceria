@@ -14,7 +14,7 @@ public class infoSaldoController implements Initializable {
     public infoSaldoController(){
 
     }
-    Main m = new Main();
+    MBankingApplication application = MBankingApplication.getInstance();
 
     @FXML
     private Button buttonBack;
@@ -31,6 +31,6 @@ public class infoSaldoController implements Initializable {
     }
 
     public void toMenuInfoRekening(ActionEvent event) throws IOException{
-        m.changeScene("menuInfoRekening.fxml");
+        application.changeScene("menuInfoRekening.fxml");
     }
 }

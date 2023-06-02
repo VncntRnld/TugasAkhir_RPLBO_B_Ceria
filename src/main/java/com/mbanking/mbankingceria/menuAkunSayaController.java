@@ -11,7 +11,7 @@ public class menuAkunSayaController {
 
     }
 
-    Main m = new Main();
+    MBankingApplication application = MBankingApplication.getInstance();
 
     @FXML
     private Button buttonLimit;
@@ -21,14 +21,14 @@ public class menuAkunSayaController {
     private Button buttonBack;
 
     public void toAturLimit(ActionEvent event) throws IOException {
-        m.changeScene("aturLimit.fxml");
+        application.changeScene("aturLimit.fxml");
     }
 
     public void toBlokirAkun(ActionEvent event) throws IOException {
-        m.changeScene("blokirAkun.fxml");
+        application.changeScene("blokirAkun.fxml");
     }
 
     public void toMainMenu(ActionEvent event) throws IOException {
-        m.changeScene("mainMenu.fxml");
+        application.changeScene("mainMenu.fxml");
     }
 }

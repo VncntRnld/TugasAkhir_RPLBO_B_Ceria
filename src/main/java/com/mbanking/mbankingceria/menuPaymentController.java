@@ -10,7 +10,7 @@ public class menuPaymentController {
     public menuPaymentController(){
     }
 
-    Main m = new Main();
+    MBankingApplication application = MBankingApplication.getInstance();
 
     @FXML
     private Button buttonInternet;
@@ -20,14 +20,14 @@ public class menuPaymentController {
     private Button buttonBack;
 
     public void toInternet(ActionEvent event) throws IOException {
-        m.changeScene("internet.fxml");
+        application.changeScene("internet.fxml");
     }
 
     public void toListrik(ActionEvent event) throws IOException {
-        m.changeScene("listrik.fxml");
+        application.changeScene("listrik.fxml");
     }
 
     public void toMainMenu(ActionEvent event) throws IOException {
-        m.changeScene("mainMenu.fxml");
+        application.changeScene("mainMenu.fxml");
     }
 }

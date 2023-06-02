@@ -12,7 +12,7 @@ public class pinController {
     public pinController(){
 
     }
-    Main m = new Main();
+    MBankingApplication application = MBankingApplication.getInstance();
     @FXML
     private Button buttonBack;
     @FXML
@@ -23,7 +23,7 @@ public class pinController {
     private Button buttonKonfirmasi;
 
     public void toMainMenu(ActionEvent event) throws IOException {
-        m.changeScene("mainMenu.fxml");
+        application.changeScene("mainMenu.fxml");
     }
 
     public void konfirmasiPIN(ActionEvent event) throws IOException {
@@ -40,19 +40,19 @@ public class pinController {
 
     private void toBerhasil() throws IOException {
         if (Data.scene.equals("transfer")) {
-            m.changeScene("transferBerhasil.fxml");
+            application.changeScene("transferBerhasil.fxml");
         }
         else if (Data.scene.equals("listrik")) {
-            m.changeScene("ListrikBerhasil.fxml");
+            application.changeScene("ListrikBerhasil.fxml");
         }
         else if (Data.scene.equals("internet")) {
-            m.changeScene("InternetBerhasil.fxml");
+            application.changeScene("InternetBerhasil.fxml");
         }
         else if (Data.scene.equals("blokir")) {
-            m.changeScene("blokirBerhasil.fxml");
+            application.changeScene("blokirBerhasil.fxml");
         }
         else if (Data.scene.equals("limit")) {
-            m.changeScene("limitBerhasil.fxml");
+            application.changeScene("limitBerhasil.fxml");
         }
     }
 

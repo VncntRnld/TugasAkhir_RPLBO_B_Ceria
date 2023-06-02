@@ -12,7 +12,7 @@ public class menuInfoController {
 
     }
 
-    Main m = new Main();
+    MBankingApplication application = MBankingApplication.getInstance();
 
     @FXML
     private Button buttonSaldo;
@@ -22,14 +22,14 @@ public class menuInfoController {
     private Button buttonBack;
 
     public void toInfoSaldo(ActionEvent event) throws IOException {
-        m.changeScene("infoSaldo.fxml");
+        application.changeScene("infoSaldo.fxml");
     }
 
     public void toMutasiRekening(ActionEvent event) throws IOException {
-        m.changeScene("mutasiRekening.fxml");
+        application.changeScene("mutasiRekening.fxml");
     }
 
     public void toMainMenu(ActionEvent event) throws IOException {
-        m.changeScene("mainMenu.fxml");
+        application.changeScene("mainMenu.fxml");
     }
 }

@@ -11,7 +11,7 @@ public class RegisterController {
     public RegisterController(){
 
     }
-    Main m = new Main();
+    MBankingApplication application = MBankingApplication.getInstance();
 
     // 01 form
     @FXML
@@ -52,7 +52,7 @@ public class RegisterController {
     private Akun akunBaru;
 
     public void moveSignIn(ActionEvent event) throws IOException {
-        m.changeScene("Login.fxml");
+        application.changeScene("Login.fxml");
     }
 
     public void moveNextForm(ActionEvent event) throws IOException {
@@ -62,12 +62,12 @@ public class RegisterController {
         else {
             akunBaru = new Akun(inputNama.getText(), inputNIK.getText(), inputTglLahir.getText(), inputDomisili.getText(), inputNoTelp.getText());
             Data.akun = akunBaru;
-            m.changeScene("Register02.fxml");
+            application.changeScene("Register02.fxml");
         }
     }
 
     public void toRegister(ActionEvent event) throws IOException {
-        m.changeScene("Register.fxml");
+        application.changeScene("Register.fxml");
     }
 
     public void submitForm(ActionEvent event) throws IOException {
@@ -91,7 +91,7 @@ public class RegisterController {
 
             akunData.addAkun(akunBaru);
 
-            m.changeScene("loginRegister/Login.fxml");
+            application.changeScene("loginRegister/Login.fxml");
         }
 
     }

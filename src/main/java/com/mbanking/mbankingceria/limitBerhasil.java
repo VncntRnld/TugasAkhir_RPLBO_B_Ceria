@@ -6,15 +6,16 @@ import javafx.scene.control.Button;
 
 import java.io.IOException;
 
-public class mutasiRekeningController {
-    public mutasiRekeningController(){
+public class limitBerhasil {
+    public limitBerhasil(){
 
     }
     MBankingApplication application = MBankingApplication.getInstance();
-    @FXML
-    private Button buttonBack;
 
-    public void toMenuInfoRekening(ActionEvent event) throws IOException {
-        application.changeScene("menuInfoRekening.fxml");
+    @FXML
+    private Button buttonMainMenu;
+
+    public void toMainMenu(ActionEvent event) throws IOException {
+        application.changeScene("mainMenu.fxml");
     }
 }

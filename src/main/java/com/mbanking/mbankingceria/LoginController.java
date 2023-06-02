@@ -22,7 +22,8 @@ public class LoginController {
     private Button signIn;
     @FXML
     private Hyperlink toRegister;
-    Main m = new Main();
+    MBankingApplication application = MBankingApplication.getInstance();
+
     private AkunData akunData = new AkunData();
 
     public void userLogIn(ActionEvent event) throws IOException {
@@ -33,7 +34,7 @@ public class LoginController {
         //Verify if account is stored in AkunData
         if (akunData.verifyAkun(username.getText(), password.getText())){
             Data.akun = akunData.getAkun(username.getText());
-            m.changeScene("mainMenu.fxml");
+            application.changeScene("mainMenu.fxml");
         }
         else if (username.getText().isEmpty() || password.getText().isEmpty()){
             loginMsg.setText("Please enter your data");
@@ -45,7 +46,7 @@ public class LoginController {
     }
 
     public void moveRegister(ActionEvent event) throws IOException{
-        m.changeScene("Register.fxml");
+        application.changeScene("Register.fxml");
     }
 
 }

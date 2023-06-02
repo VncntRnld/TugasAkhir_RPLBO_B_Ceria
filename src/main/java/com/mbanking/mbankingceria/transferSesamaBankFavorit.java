@@ -13,7 +13,7 @@ public class transferSesamaBankFavorit {
 
     }
 
-    Main m = new Main();
+    MBankingApplication application = MBankingApplication.getInstance();
 
     @FXML
     private Button buttonBack;
@@ -23,15 +23,15 @@ public class transferSesamaBankFavorit {
     private Button buttonLanjut;
 
     public void toMenuTransfer(ActionEvent event) throws IOException {
-        m.changeScene("menuTransfer.fxml");
+        application.changeScene("menuTransfer.fxml");
     }
 
     public void toTransferMenuSesamaBankBaru(ActionEvent event) throws IOException {
-        m.changeScene("transferSesamaBank_Baru.fxml");
+        application.changeScene("transferSesamaBank_Baru.fxml");
     }
 
     public void toPIN(ActionEvent event) throws IOException {
         Data.scene = "transfer";
-        m.changeScene("pin.fxml");
+        application.changeScene("pin.fxml");
     }
 }
