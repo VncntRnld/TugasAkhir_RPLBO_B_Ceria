@@ -28,18 +28,18 @@
          </font>
       </Label>
       <TextField fx:id="inputID" layoutX="43.0" layoutY="162.0" prefHeight="25.0" prefWidth="233.0" />
-      <Label layoutX="43.0" layoutY="198.0" text="Nomor Telepon" textFill="WHITE">
+      <Label layoutX="43.0" layoutY="198.0" text="Nama Pelanggan" textFill="WHITE">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <TextField fx:id="inputNoTelp" layoutX="43.0" layoutY="218.0" prefHeight="25.0" prefWidth="233.0" />
-      <Label layoutX="43.0" layoutY="254.0" text="Nominal" textFill="WHITE">
+      <TextField fx:id="inputNama" layoutX="43.0" layoutY="218.0" prefHeight="25.0" prefWidth="233.0" />
+      <Label layoutX="43.0" layoutY="254.0" text="Nomor Telepon" textFill="WHITE">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <TextField fx:id="inputNominal" layoutX="43.0" layoutY="274.0" prefHeight="25.0" prefWidth="233.0" />
+      <TextField fx:id="inputNoTelp" layoutX="43.0" layoutY="274.0" prefHeight="25.0" prefWidth="233.0" />
       <Button fx:id="buttonLanjut" layoutX="43.0" layoutY="487.0" mnemonicParsing="false" onAction="#toPIN" prefHeight="27.0" prefWidth="235.0" text="LANJUT">
          <font>
             <Font name="System Bold" size="12.0" />
@@ -65,6 +65,18 @@
             </Button>
          </children>
       </Pane>
+      <Label layoutX="62.0" layoutY="445.0" prefHeight="34.0" prefWidth="195.0" text="*Pembayaran Indihome akan dikenakan biaya admin sebesar Rp 2500" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="309.0" text="Nominal" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="inputNominal" layoutX="42.0" layoutY="329.0" prefHeight="25.0" prefWidth="233.0" />
+      <Label fx:id="warning" alignment="CENTER" contentDisplay="CENTER" layoutX="63.0" layoutY="354.0" prefHeight="34.0" prefWidth="195.0" textFill="WHITE" wrapText="true" />
    </children>
    <stylesheets>
       <URL value="@assets/CSS/style.css" />

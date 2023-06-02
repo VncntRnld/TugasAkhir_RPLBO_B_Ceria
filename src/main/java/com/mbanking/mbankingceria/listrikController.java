@@ -26,6 +26,9 @@ public class listrikController {
     private TextField inputID;
 
     @FXML
+    private TextField inputNama;
+
+    @FXML
     private TextField inputNominal;
 
     public void toMenuPayment(ActionEvent event) throws IOException {

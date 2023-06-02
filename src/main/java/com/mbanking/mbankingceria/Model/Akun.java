@@ -26,7 +26,7 @@ public abstract class Akun {
         this.noHP = noHP;
         //rekening
         this.noRek = setNoRek();
-        this.saldo = 100_000;
+        this.saldo = 1_000_000;
         this.limit = 5_000_000;
     }
 

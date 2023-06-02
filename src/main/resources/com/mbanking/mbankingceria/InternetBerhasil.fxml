@@ -24,18 +24,18 @@
       <Label layoutX="26.0" layoutY="280.0" text="ID Pelanggan" textFill="WHITE" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="220.0" />
       <Label layoutX="26.0" layoutY="302.0" text="Nama Pelanggan" textFill="WHITE" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="240.0" />
       <Label layoutX="26.0" layoutY="321.0" text="Nomor Rekening " textFill="WHITE" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="260.0" />
-      <Label layoutX="222.0" layoutY="200.0" text="22-02-2023" textFill="WHITE" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="180.0" />
-      <Label layoutX="225.0" layoutY="226.0" text="08:00:04 WIB" textFill="WHITE" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="200.0" />
-      <Label layoutX="226.0" layoutY="280.0" text="123456789098" textFill="WHITE" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="220.0" />
-      <Label layoutX="236.0" layoutY="302.0" text=" Dhea Angelina" textFill="WHITE" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="240.0" />
-      <Label layoutX="251.0" layoutY="321.0" text=" 123456780" textFill="WHITE" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="260.0" />
+      <Label fx:id="labelTanggal" layoutX="222.0" layoutY="200.0" text="22-02-2023" textFill="WHITE" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="180.0" />
+      <Label fx:id="labelWaktu" layoutX="225.0" layoutY="226.0" text="08:00:04 WIB" textFill="WHITE" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="200.0" />
+      <Label fx:id="labelID" layoutX="226.0" layoutY="280.0" text="123456789098" textFill="WHITE" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="220.0" />
+      <Label fx:id="labelNama" layoutX="236.0" layoutY="302.0" text=" Dhea Angelina" textFill="WHITE" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="240.0" />
+      <Label fx:id="labelNoRek" layoutX="251.0" layoutY="321.0" text=" 123456780" textFill="WHITE" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="260.0" />
       <Separator layoutX="40.0" layoutY="288.0" prefHeight="3.0" prefWidth="241.0" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="288.0" />
       <Label layoutX="36.0" layoutY="359.0" text="Jumlah Tagihan " textFill="WHITE" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="300.0" />
       <Label layoutX="36.0" layoutY="384.0" text="Biaya Admin" textFill="WHITE" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="320.0" />
       <Label layoutX="36.0" layoutY="410.0" text="Total Bayar" textFill="WHITE" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="340.0" />
-      <Label layoutX="238.0" layoutY="359.0" text="233.100" textFill="WHITE" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="300.0" />
+      <Label fx:id="labelJumlah" layoutX="238.0" layoutY="359.0" text="233.100" textFill="WHITE" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="300.0" />
       <Label layoutX="245.0" layoutY="384.0" text="2.500" textFill="WHITE" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="320.0" />
-      <Label layoutX="238.0" layoutY="410.0" text="235.600" textFill="WHITE" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="340.0" />
+      <Label fx:id="labelTotal" layoutX="238.0" layoutY="410.0" text="235.600" textFill="WHITE" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="340.0" />
       <ImageView fitHeight="93.0" fitWidth="99.0" layoutX="132.0" layoutY="12.0" pickOnBounds="true" AnchorPane.leftAnchor="112.0" AnchorPane.topAnchor="-8.0">
          <image>
             <Image url="@assets/img/Logo.png" />

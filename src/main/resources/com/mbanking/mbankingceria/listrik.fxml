@@ -24,8 +24,8 @@
          </font></Label>
       <Label layoutX="43.0" layoutY="142.0" text="ID Pelanggan" textFill="WHITE" />
       <TextField fx:id="inputID" layoutX="43.0" layoutY="162.0" prefHeight="25.0" prefWidth="233.0" />
-      <Label layoutX="43.0" layoutY="198.0" text="Nominal (Kelipatan Rp 50.000,00)" textFill="WHITE" />
-      <TextField fx:id="inputNominal" layoutX="43.0" layoutY="218.0" prefHeight="25.0" prefWidth="233.0" />
+      <Label layoutX="43.0" layoutY="197.0" text="Nama Pelanggan" textFill="WHITE" />
+      <TextField fx:id="inputNama" layoutX="43.0" layoutY="217.0" prefHeight="25.0" prefWidth="233.0" />
       <Button fx:id="buttonLanjut" layoutX="43.0" layoutY="487.0" mnemonicParsing="false" onAction="#toPIN" prefHeight="27.0" prefWidth="235.0" text="LANJUT">
          <font>
             <Font name="System Bold" size="12.0" />
@@ -51,6 +51,8 @@
             </Button>
          </children>
       </Pane>
+      <Label layoutX="43.0" layoutY="253.0" text="Nominal (Kelipatan Rp 50.000,00)" textFill="WHITE" />
+      <TextField fx:id="inputNominal" layoutX="43.0" layoutY="273.0" prefHeight="25.0" prefWidth="233.0" />
    </children>
    <stylesheets>
       <URL value="@assets/CSS/style.css" />
