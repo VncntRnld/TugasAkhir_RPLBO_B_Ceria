@@ -14,7 +14,12 @@ public class AkunCeria extends Akun{
         Akun akunTujuan = akunData.getTujuan(tujuan);
 
         if (getSaldo() > nominal) {
-            setSaldo(getSaldo()-nominal);
+            if (akunTujuan instanceof AkunCeria){
+                setSaldo(getSaldo()-nominal);
+            }
+            else {
+                setSaldo(getSaldo()-nominal-2500);
+            }
             akunTujuan.setSaldo(akunTujuan.getSaldo()+nominal);
         }
     }

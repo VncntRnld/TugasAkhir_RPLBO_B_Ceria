@@ -101,7 +101,6 @@ public abstract class Akun {
     public abstract void transfer(String tujuan, long nominal);
 
 
-
     // Data lain 😵‍💫
     private ArrayList<String> listFavorit = new ArrayList<>();
     private Map<String, String> dataFavorit = new HashMap<>();
@@ -116,9 +115,10 @@ public abstract class Akun {
     public String getAkunFavorit(String nama) {
         return dataFavorit.get(nama);
     }
+
+    // Buat dipake di choiceBox 😌
     public String[] getFavorit() {
         //langsung jadiin array dulu
-        String[] namaFav = listFavorit.toArray(new String[listFavorit.size()]);
-        return namaFav;
+        return listFavorit.toArray(new String[listFavorit.size()]);
     }
 }

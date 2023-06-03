@@ -27,7 +27,6 @@ public class blokirBerhasil implements Initializable {
     }
 
     public void blokir() {
-        System.out.println(Data.akun.getUsername());
         akunData.deleteAkun(Data.akun.getUsername());
         Data.akun = null;
     }

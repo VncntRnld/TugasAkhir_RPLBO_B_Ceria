@@ -1,5 +1,8 @@
 package com.mbanking.mbankingceria;
 
+import com.mbanking.mbankingceria.Model.AkunCemberut;
+import com.mbanking.mbankingceria.Model.AkunCeria;
+import com.mbanking.mbankingceria.Model.AkunData;
 import com.mbanking.mbankingceria.Model.Data;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -35,9 +38,14 @@ public class transferAntarBankBaru implements Initializable {
     private TextField inputNominal;
     @FXML
     private TextField inputBerita;
+    @FXML
+    private Label warning;
 
     //TAMPUNGAN
     private String[] arrBankTujuan = {"Cemberut Bank"};
+
+    //TAMBAHAN
+    private AkunData akunData = new AkunData();
 
     public void initialize(URL location, ResourceBundle resources) {
         inputBank.getItems().addAll(arrBankTujuan);
@@ -52,8 +60,26 @@ public class transferAntarBankBaru implements Initializable {
     }
 
     public void toPIN(ActionEvent event) throws IOException {
-        Data.scene = "transfer";
-        application.changeScene("pin.fxml");
+        // Validasi 🔎
+        if (inputNoRek.getText().isEmpty() || inputNominal.getText().isEmpty()){
+            warning.setText("Please input your data");
+        }
+        else if (!akunData.cekTujuan(inputNoRek.getText())){
+            warning.setText("Invalid NoRekening");
+        }
+        // Tergantung choicebox 😒
+        else if (akunData.getTujuan(inputNoRek.getText()) instanceof AkunCeria) {
+            warning.setText("Invalid NoRekening");
+        }
+        else {
+            // Selesai transfer..
+            Data.scene = "transfer";
+            Data.noRekTujuan = inputNoRek.getText();
+            Data.tfNominal = Integer.parseInt(inputNominal.getText());
+            Data.tfBerita = inputBerita.getText();
+
+            application.changeScene("pin.fxml");
+        }
     }
 
 }

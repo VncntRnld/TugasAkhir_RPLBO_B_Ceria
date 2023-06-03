@@ -37,10 +37,10 @@
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></ChoiceBox>
-      <Label layoutX="41.0" layoutY="169.0" text="Nama Penerima" textFill="WHITE" />
-      <TextField fx:id="inputNama" layoutX="41.0" layoutY="186.0" prefHeight="0.0" prefWidth="239.0" />
-      <Label layoutX="40.0" layoutY="215.0" text="Nomor Rekening" textFill="WHITE" />
-      <TextField fx:id="inputNoRek" layoutX="40.0" layoutY="232.0" prefHeight="0.0" prefWidth="239.0" AnchorPane.leftAnchor="40.0" />
+      <Label layoutX="41.0" layoutY="211.0" text="Nama Penerima" textFill="WHITE" />
+      <TextField fx:id="inputNama" disable="true" layoutX="41.0" layoutY="228.0" prefHeight="0.0" prefWidth="239.0" />
+      <Label layoutX="42.0" layoutY="168.0" text="Nomor Rekening" textFill="WHITE" />
+      <TextField fx:id="inputNoRek" layoutX="42.0" layoutY="185.0" prefHeight="0.0" prefWidth="239.0" AnchorPane.leftAnchor="42.0" />
       <CheckBox fx:id="cekFavorit" layoutX="44.0" layoutY="262.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="163.0" text="Simpan sebagai Daftar Favorit" textFill="WHITE">
          <font>
             <Font size="10.0" />
@@ -76,5 +76,6 @@
             </Button>
          </children>
       </Pane>
+      <Label alignment="CENTER" layoutX="131.0" layoutY="393.0" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
    </children>
 </AnchorPane>

@@ -14,6 +14,7 @@ public class limitBerhasil implements Initializable {
     public limitBerhasil(){
 
     }
+
     MBankingApplication application = MBankingApplication.getInstance();
 
     @FXML

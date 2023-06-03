@@ -31,7 +31,6 @@ public class infoSaldoController implements Initializable {
         renderInfo();
     }
 
-
     private void renderInfo() {
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
         LocalDateTime now = LocalDateTime.now();

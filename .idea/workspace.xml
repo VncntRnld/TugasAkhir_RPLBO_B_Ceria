@@ -6,30 +6,23 @@
   <component name="ChangeListManager">
     <list default="true" id="57c4a8e2-226e-4b5d-805b-0ca0d32cb2d7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/MBankingApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/MBankingApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/Model/Akun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/Model/Akun.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/Model/AkunCemberut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/Model/AkunCemberut.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/Model/AkunCeria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/Model/AkunCeria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/Model/AkunData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/Model/AkunData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/Model/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/Model/Data.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/internetBerhasilController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/internetBerhasilController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/transaksiBerhasil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/blokirBerhasil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/blokirBerhasil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/transferSesamaBankBaru.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/transferSesamaBankBaru.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mbanking/mbankingceria/ListrikBerhasil.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mbanking/mbankingceria/ListrikBerhasil.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mbanking/mbankingceria/Register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mbanking/mbankingceria/Register.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mbanking/mbankingceria/listrik.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mbanking/mbankingceria/listrik.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mbanking/mbankingceria/transferBerhasil.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mbanking/mbankingceria/transferBerhasil.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mbanking/mbankingceria/transferSesamaBank_Baru.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mbanking/mbankingceria/transferSesamaBank_Baru.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/transferSesamaBankFavorit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/transferSesamaBankFavorit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mbanking/mbankingceria/transferAntarBank_Baru.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mbanking/mbankingceria/transferAntarBank_Baru.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mbanking/mbankingceria/transferAntarBank_Favorit.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mbanking/mbankingceria/transferAntarBank_Favorit.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/mbanking/mbankingceria/transferSesamaBank_Favorit.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mbanking/mbankingceria/transferSesamaBank_Favorit.fxml" afterDir="false" />
     </list>
     <list id="0b331268-06d9-4062-8aae-cee9c9736f72" name="Changes by Deha" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/MBankingApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/MBankingApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/Model/Akun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/Model/Akun.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/Model/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/Model/Data.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/internetBerhasilController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/internetBerhasilController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/internetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/internetController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/limitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/limitController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/listrikBerhasilController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/listrikBerhasilController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/listrikController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/listrikController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/transferSesamaBankFavorit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/transferSesamaBankFavorit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/infoSaldoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/infoSaldoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/limitBerhasil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/limitBerhasil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/transferAntarBankBaru.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/transferAntarBankBaru.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/transferAntarBankFavorit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/transferAntarBankFavorit.java" afterDir="false" />
     </list>
     <list id="0152ae31-fa6a-41d2-a102-9480c5d49635" name="Changes by Dell" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,37 +42,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/internetBerhasilController.java">
-      <ranges>
-        <range start1="39" end1="40" start2="39" end2="41" changelist="57c4a8e2-226e-4b5d-805b-0ca0d32cb2d7" />
-        <range start1="50" end1="52" start2="51" end2="53" changelist="0b331268-06d9-4062-8aae-cee9c9736f72" />
-        <range start1="53" end1="53" start2="54" end2="58" changelist="0b331268-06d9-4062-8aae-cee9c9736f72" />
-        <range start1="54" end1="54" start2="59" end2="67" changelist="57c4a8e2-226e-4b5d-805b-0ca0d32cb2d7" />
-      </ranges>
-    </file>
     <file path="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/Model/Akun.java">
       <ranges>
-        <range start1="2" end1="3" start2="2" end2="3" changelist="57c4a8e2-226e-4b5d-805b-0ca0d32cb2d7" />
-        <range start1="14" end1="15" start2="14" end2="14" changelist="0b331268-06d9-4062-8aae-cee9c9736f72" />
-        <range start1="43" end1="48" start2="42" end2="42" changelist="57c4a8e2-226e-4b5d-805b-0ca0d32cb2d7" />
-        <range start1="51" end1="56" start2="45" end2="45" changelist="57c4a8e2-226e-4b5d-805b-0ca0d32cb2d7" />
-        <range start1="59" end1="64" start2="48" end2="48" changelist="57c4a8e2-226e-4b5d-805b-0ca0d32cb2d7" />
-        <range start1="67" end1="68" start2="51" end2="51" changelist="57c4a8e2-226e-4b5d-805b-0ca0d32cb2d7" />
-        <range start1="75" end1="76" start2="58" end2="58" changelist="57c4a8e2-226e-4b5d-805b-0ca0d32cb2d7" />
-        <range start1="83" end1="84" start2="65" end2="65" changelist="57c4a8e2-226e-4b5d-805b-0ca0d32cb2d7" />
-        <range start1="91" end1="92" start2="72" end2="72" changelist="57c4a8e2-226e-4b5d-805b-0ca0d32cb2d7" />
-        <range start1="110" end1="111" start2="90" end2="90" changelist="57c4a8e2-226e-4b5d-805b-0ca0d32cb2d7" />
-        <range start1="114" end1="115" start2="93" end2="93" changelist="57c4a8e2-226e-4b5d-805b-0ca0d32cb2d7" />
-        <range start1="118" end1="119" start2="96" end2="96" changelist="57c4a8e2-226e-4b5d-805b-0ca0d32cb2d7" />
-        <range start1="120" end1="121" start2="97" end2="97" changelist="57c4a8e2-226e-4b5d-805b-0ca0d32cb2d7" />
-        <range start1="125" end1="125" start2="101" end2="123" changelist="57c4a8e2-226e-4b5d-805b-0ca0d32cb2d7" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/Model/Data.java">
-      <ranges>
-        <range start1="4" end1="4" start2="4" end2="7" changelist="57c4a8e2-226e-4b5d-805b-0ca0d32cb2d7" />
-        <range start1="7" end1="7" start2="10" end2="11" changelist="0b331268-06d9-4062-8aae-cee9c9736f72" />
-        <range start1="9" end1="9" start2="13" end2="33" changelist="57c4a8e2-226e-4b5d-805b-0ca0d32cb2d7" />
+        <range start1="103" end1="104" start2="103" end2="103" changelist="0b331268-06d9-4062-8aae-cee9c9736f72" />
+        <range start1="118" end1="118" start2="117" end2="119" changelist="57c4a8e2-226e-4b5d-805b-0ca0d32cb2d7" />
+        <range start1="120" end1="122" start2="121" end2="122" changelist="57c4a8e2-226e-4b5d-805b-0ca0d32cb2d7" />
       </ranges>
     </file>
   </component>

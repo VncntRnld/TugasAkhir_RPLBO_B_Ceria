@@ -1,5 +1,7 @@
 package com.mbanking.mbankingceria.Model;
 
+import java.util.Map;
+
 public class Data {
 
     AkunData akunData = new AkunData();
@@ -30,5 +32,6 @@ public class Data {
     public static String listrikID;
     public static String listrikNama;
     public static long listrikNominal;
+
 
 }

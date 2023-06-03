@@ -57,7 +57,7 @@ public class MBankingApplication extends Application {
         admin03.setPassword("icha");
         admin03.setPIN("786786");
 
-        admin03.setNoRek("00000001");
+        admin03.setNoRek("00000003");
 
         akunData.addAkun(admin01);
         akunData.addAkun(admin02);

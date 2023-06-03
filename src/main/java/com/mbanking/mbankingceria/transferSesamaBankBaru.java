@@ -1,5 +1,6 @@
 package com.mbanking.mbankingceria;
 
+import com.mbanking.mbankingceria.Model.AkunCeria;
 import com.mbanking.mbankingceria.Model.AkunData;
 import com.mbanking.mbankingceria.Model.Data;
 import javafx.event.ActionEvent;
@@ -51,7 +52,10 @@ public class transferSesamaBankBaru {
         if (inputNoRek.getText().isEmpty() || inputNominal.getText().isEmpty()){
             warning.setText("Please input your data");
         }
-        else if (akunData.cekTujuan(inputNoRek.getText())){
+        else if (!akunData.cekTujuan(inputNoRek.getText())){
+            warning.setText("Invalid NoRekening");
+        }
+        else if (!(akunData.getTujuan(inputNoRek.getText()) instanceof AkunCeria)) {
             warning.setText("Invalid NoRekening");
         }
         else {
@@ -63,7 +67,7 @@ public class transferSesamaBankBaru {
                 warning.setText("Invalid Favorite Name");
             }
 
-            // Selesai transfer..
+            // Selesai
             Data.scene = "transfer";
             Data.noRekTujuan = inputNoRek.getText();
             Data.tfNominal = Integer.parseInt(inputNominal.getText());
