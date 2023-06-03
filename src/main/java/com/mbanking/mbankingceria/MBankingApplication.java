@@ -41,21 +41,22 @@ public class MBankingApplication extends Application {
         admin01.setUsername("viro");
         admin01.setPassword("viro");
         admin01.setPIN("560656");
-        //Buat admin, 8 digit
+
         admin01.setNoRek("00000001");
+        admin01.addFavorit("deha", "00000002");
 
         AkunCeria admin02 = new AkunCeria("Dhea Angelina", "71210693", "23/04/04", "Yogyakarta", "081235259418");
         admin02.setUsername("deha");
         admin02.setPassword("deha");
         admin02.setPIN("232323");
-        //Buat admin, 8 digit
+
         admin02.setNoRek("00000002");
 
         AkunCemberut admin03 = new AkunCemberut("Icha Patricia", "71210784", "28/10/02", "Yogyakarta", "081235259418");
         admin03.setUsername("icha");
         admin03.setPassword("icha");
         admin03.setPIN("786786");
-        //Buat admin, 8 digit
+
         admin03.setNoRek("00000001");
 
         akunData.addAkun(admin01);

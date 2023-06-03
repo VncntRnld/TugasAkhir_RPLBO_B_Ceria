@@ -46,10 +46,8 @@ public class limitController implements Initializable {
     public void toPIN(ActionEvent event) throws IOException {
         if (inputLimit.getText().isEmpty()){
             warning.setText("Please input your limit");
-        } else if (inputLimit.equals(Data.akun.getLimit())) {
+        } else if (Integer.parseInt(inputLimit.getText()) == Data.akun.getLimit()) {
             warning.setText("Limit can not be the same");
-        } else if (Integer.parseInt(inputLimit.getText()) >= Data.akun.getSaldo()) {
-            warning.setText("Limit exceeded.");
         } else if (Integer.parseInt(inputLimit.getText()) >= 999_000_000) {
             warning.setText("Limit exceeded.");
         } else {

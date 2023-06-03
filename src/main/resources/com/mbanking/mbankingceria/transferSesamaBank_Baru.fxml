@@ -31,11 +31,11 @@
          </font>
       </Hyperlink>
       <Separator layoutX="14.0" layoutY="104.0" prefHeight="3.0" prefWidth="291.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
-      <Label layoutX="40.0" layoutY="130.0" text="Nama Penerima" textFill="WHITE" />
-      <TextField fx:id="inputNama" layoutX="40.0" layoutY="147.0" prefHeight="0.0" prefWidth="239.0" />
-      <Label layoutX="39.0" layoutY="176.0" text="Nomor Rekening" textFill="WHITE" />
-      <TextField fx:id="inputNoRek" layoutX="39.0" layoutY="193.0" prefHeight="0.0" prefWidth="239.0" />
-      <CheckBox fx:id="cekFavorit" layoutX="43.0" layoutY="223.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="163.0" text="Simpan sebagai Daftar Favorit" textFill="WHITE">
+      <Label layoutX="40.0" layoutY="174.0" text="Nama Penerima" textFill="WHITE" />
+      <TextField fx:id="inputNama" disable="true" layoutX="40.0" layoutY="191.0" prefHeight="0.0" prefWidth="239.0" />
+      <Label layoutX="40.0" layoutY="126.0" text="Nomor Rekening" textFill="WHITE" />
+      <TextField fx:id="inputNoRek" layoutX="40.0" layoutY="143.0" prefHeight="0.0" prefWidth="239.0" />
+      <CheckBox fx:id="cekFavorit" layoutX="43.0" layoutY="223.0" mnemonicParsing="false" onAction="#cekSaveFavorit" prefHeight="17.0" prefWidth="163.0" text="Simpan sebagai Daftar Favorit" textFill="WHITE">
          <font>
             <Font size="10.0" />
          </font>
@@ -66,5 +66,6 @@
             </Button>
          </children>
       </Pane>
+      <Label fx:id="warning" alignment="CENTER" layoutY="358.0" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
    </children>
 </AnchorPane>

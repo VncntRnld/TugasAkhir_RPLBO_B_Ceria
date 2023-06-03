@@ -1,5 +1,6 @@
 package com.mbanking.mbankingceria;
 
+import com.mbanking.mbankingceria.Model.AkunCeria;
 import com.mbanking.mbankingceria.Model.Data;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -13,9 +14,9 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ResourceBundle;
 
-public class transaksiBerhasil implements Initializable {
+public class transferBerhasil implements Initializable {
 
-    public transaksiBerhasil() {
+    public transferBerhasil() {
 
     }
 
@@ -44,13 +45,19 @@ public class transaksiBerhasil implements Initializable {
 
 
     public void initialize(URL location, ResourceBundle resources) {
-        // Jalan kalau ganti scene
+        // Biar update kalo ganti kesini 😗
+        Data.akun.transfer(Data.noRekTujuan, Data.tfNominal);
+
         renderInfo();
     }
 
     public void renderInfo(){
-        labelNama.setText(Data.akun.getNamaNasabah());
-        labelNoRek.setText(Data.akun.getNoRek());
+        Data data = new Data();
+
+        labelNama.setText(data.getAkunTujuan().getNamaNasabah());
+        labelNoRek.setText(data.getAkunTujuan().getNoRek());
+
+        //Tanggal realtime 😌
         DateTimeFormatter date = DateTimeFormatter.ofPattern("dd-MM-yyyy");
         LocalDateTime tanggal = LocalDateTime.now();
         DateTimeFormatter time = DateTimeFormatter.ofPattern("HH:mm:ss");
@@ -58,6 +65,35 @@ public class transaksiBerhasil implements Initializable {
         labelTanggal.setText(date.format(tanggal));
         labelWaktu.setText(time.format(waktu));
 
+        labelNominal.setText(String.valueOf(Data.tfNominal));
+
+        // Biaya Admin 😒
+        if (data.getAkunTujuan() instanceof AkunCeria){
+            labelAdmin.setText("0");
+        }
+        else {
+            labelAdmin.setText("2500");
+        }
+
+        // Total 😗
+        if (data.getAkunTujuan() instanceof AkunCeria){
+            labelTotal.setText(String.valueOf(Data.tfNominal));
+        }
+        else {
+            labelTotal.setText(String.valueOf(Data.tfNominal+2500));
+        }
+
+        // Berita
+        labelBerita.setText(Data.tfBerita);
+
+        clearData();
+    }
+
+    public void clearData() {
+        // Pembersihan... 🧹
+        Data.noRekTujuan = null;
+        Data.tfBerita = "";
+        Data.tfNominal = 0;
     }
 
     public void toMainMenu(ActionEvent event) throws IOException {

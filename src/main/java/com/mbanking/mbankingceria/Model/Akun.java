@@ -1,6 +1,6 @@
 package com.mbanking.mbankingceria.Model;
 
-import java.util.Random;
+import java.util.*;
 
 public abstract class Akun {
     private String namaNasabah;
@@ -11,7 +11,6 @@ public abstract class Akun {
     private String username;
     private String password;
     private String PIN;
-
 
     // rekening
     private String noRek;
@@ -41,31 +40,15 @@ public abstract class Akun {
     public String getNIK() {
         return NIK;
     }
-
-    public void setNIK(String NIK) {
-        this.NIK = NIK;
-    }
-
     public String getTglLahir() {
         return tglLahir;
     }
-
-    public void setTglLahir(String tglLahir) {
-        this.tglLahir = tglLahir;
-    }
-
     public String getDomisili() {
         return domisili;
     }
-
-    public void setDomisili(String domisili) {
-        this.domisili = domisili;
-    }
-
     public String getNoHP() {
         return noHP;
     }
-
     public void setNoHP(String noHP) {
         this.noHP = noHP;
     }
@@ -73,7 +56,6 @@ public abstract class Akun {
     public String getUsername() {
         return username;
     }
-
     public void setUsername(String username) {
         this.username = username;
     }
@@ -81,7 +63,6 @@ public abstract class Akun {
     public String getPassword() {
         return password;
     }
-
     public void setPassword(String password) {
         this.password = password;
     }
@@ -89,7 +70,6 @@ public abstract class Akun {
     public String getPIN() {
         return PIN;
     }
-
     public void setPIN(String PIN) {
         this.PIN = PIN;
     }
@@ -108,19 +88,37 @@ public abstract class Akun {
     public String getNoRek() {
         return noRek;
     }
-
     public void setSaldo(long saldo) {
         this.saldo = saldo;
     }
-
     public long getSaldo() {
         return saldo;
     }
-
     public long getLimit() { return limit; }
-
     public void setLimit(long limit) { this.limit = limit; }
 
     // buat di Override
     public abstract void transfer(String tujuan, long nominal);
+
+
+
+    // Data lain 😵‍💫
+    private ArrayList<String> listFavorit = new ArrayList<>();
+    private Map<String, String> dataFavorit = new HashMap<>();
+
+    // Transfer 💩
+    public void addFavorit(String name, String noRek) {
+        listFavorit.add(name);
+        dataFavorit.put(name, noRek);
+    }
+
+    // Ambil no rekening pada daftar favorit 🙈
+    public String getAkunFavorit(String nama) {
+        return dataFavorit.get(nama);
+    }
+    public String[] getFavorit() {
+        //langsung jadiin array dulu
+        String[] namaFav = listFavorit.toArray(new String[listFavorit.size()]);
+        return namaFav;
+    }
 }

@@ -1,12 +1,10 @@
 package com.mbanking.mbankingceria;
 
+import com.mbanking.mbankingceria.Model.AkunData;
 import com.mbanking.mbankingceria.Model.Data;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.CheckBox;
-import javafx.scene.control.Hyperlink;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 
 import java.io.IOException;
 
@@ -30,6 +28,11 @@ public class transferSesamaBankBaru {
     private TextField inputNominal;
     @FXML
     private TextField inputBerita;
+    @FXML
+    private Label warning;
+
+    // Tambahan (￣y▽￣)╭ Ohohoho.....
+    AkunData akunData = new AkunData();
 
     public void toMenuTransfer(ActionEvent event) throws IOException {
         application.changeScene("menuTransfer.fxml");
@@ -39,8 +42,34 @@ public class transferSesamaBankBaru {
         application.changeScene("transferSesamaBank_Favorit.fxml");
     }
 
+    public void cekSaveFavorit(ActionEvent event){
+        inputNama.setDisable(!cekFavorit.isSelected());
+    }
+
     public void toPIN(ActionEvent event) throws IOException {
-        Data.scene = "transfer";
-        application.changeScene("pin.fxml");
+        // Validasi 🔎
+        if (inputNoRek.getText().isEmpty() || inputNominal.getText().isEmpty()){
+            warning.setText("Please input your data");
+        }
+        else if (akunData.cekTujuan(inputNoRek.getText())){
+            warning.setText("Invalid NoRekening");
+        }
+        else {
+            // if cekFavorit == true, save duluuu...
+            if (cekFavorit.isSelected() & !inputNama.getText().isEmpty()){
+                Data.akun.addFavorit(inputNama.getText(), inputNoRek.getText());
+            }
+            else {
+                warning.setText("Invalid Favorite Name");
+            }
+
+            // Selesai transfer..
+            Data.scene = "transfer";
+            Data.noRekTujuan = inputNoRek.getText();
+            Data.tfNominal = Integer.parseInt(inputNominal.getText());
+            Data.tfBerita = inputBerita.getText();
+
+            application.changeScene("pin.fxml");
+        }
     }
 }

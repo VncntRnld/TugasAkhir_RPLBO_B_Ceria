@@ -43,9 +43,12 @@ public class internetController {
         } else if (Integer.parseInt(inputNominal.getText()) >= Data.akun.getSaldo()) {
             warning.setText("Saldo NOT enough");
         } else {
+            Data.internetID = inputID.getText();
+            Data.internetNama = inputNama.getText();
+            Data.internetNoTelp = inputNoTelp.getText();
+            Data.internetNominal = Long.parseLong(inputNominal.getText());
             Data.scene = "internet";
             application.changeScene("pin.fxml");
         }
     }
-
 }

@@ -10,8 +10,12 @@ public class AkunCeria extends Akun{
 
     @Override
     public void transfer(String tujuan, long nominal) {
+        AkunData akunData = new AkunData();
+        Akun akunTujuan = akunData.getTujuan(tujuan);
+
         if (getSaldo() > nominal) {
-            setSaldo(getSaldo() - nominal);
+            setSaldo(getSaldo()-nominal);
+            akunTujuan.setSaldo(akunTujuan.getSaldo()+nominal);
         }
     }
 

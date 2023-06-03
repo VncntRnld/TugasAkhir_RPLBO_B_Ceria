@@ -37,7 +37,8 @@ public class internetBerhasilController implements Initializable {
     private Label labelTotal;
 
     public void initialize(URL location, ResourceBundle resources) {
-        // Jalan kalau ganti scene
+        Data.akun.setSaldo(Data.akun.getSaldo() - Data.internetNominal - 2500);
+
         renderInfo();
     }
 
@@ -48,9 +49,21 @@ public class internetBerhasilController implements Initializable {
         LocalDateTime waktu = LocalDateTime.now();
         labelTanggal.setText(date.format(tanggal));
         labelWaktu.setText(time.format(waktu));
-        labelID.setText(Data.akun.getNIK());
-        labelNama.setText(Data.akun.getNamaNasabah());
+        labelID.setText(Data.internetID);
+        labelNama.setText(Data.internetNama);
         labelNoRek.setText(Data.akun.getNoRek());
+        labelJumlah.setText(String.valueOf(Data.internetNominal));
+        labelTotal.setText(String.valueOf(Data.internetNominal + 2500));
+
+        clearData();
+    }
+
+    public void clearData() {
+        // Pembersihan 🧹..
+        Data.internetNominal = 0;
+        Data.internetID = "";
+        Data.internetNama = "";
+        Data.internetNoTelp = "";
     }
 
     public void toMainMenu(ActionEvent event) throws IOException {
