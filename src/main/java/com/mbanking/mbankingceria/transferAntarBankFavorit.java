@@ -72,6 +72,9 @@ public class transferAntarBankFavorit implements Initializable {
         else if (Integer.parseInt(inputNominal.getText()) >= Data.akun.getSaldo()) {
             warning.setText("Saldo NOT enough");
         }
+        else if (Integer.parseInt(inputNominal.getText()) <= 0) {
+            warning.setText("Invalid Nominal");
+        }
         else {
             // Selesai transfer..
             Data.scene = "transfer";

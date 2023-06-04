@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="57c4a8e2-226e-4b5d-805b-0ca0d32cb2d7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/RegisterController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/transferAntarBankBaru.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/transferAntarBankBaru.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/transferAntarBankFavorit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/transferAntarBankFavorit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/transferSesamaBankBaru.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/transferSesamaBankBaru.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/transferSesamaBankFavorit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mbanking/mbankingceria/transferSesamaBankFavorit.java" afterDir="false" />
     </list>
     <list id="015618b6-73ef-432c-bd9a-7e1c9817c20d" name="Changes by Deha" comment="" />
     <list id="0152ae31-fa6a-41d2-a102-9480c5d49635" name="Changes by Dell" comment="" />

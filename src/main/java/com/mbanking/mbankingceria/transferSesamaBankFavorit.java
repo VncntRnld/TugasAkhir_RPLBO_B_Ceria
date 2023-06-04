@@ -74,6 +74,9 @@ public class transferSesamaBankFavorit implements Initializable {
         else if (!(akunData.getTujuan(inputNoRek.getText()) instanceof AkunCeria)) {
             warning.setText("Invalid NoRekening");
         }
+        else if (Integer.parseInt(inputNominal.getText()) <= 0) {
+            warning.setText("Invalid Nominal");
+        }
         else {
             // Selesai transfer..
             Data.scene = "transfer";

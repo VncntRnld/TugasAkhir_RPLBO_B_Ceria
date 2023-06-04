@@ -78,12 +78,13 @@ public class transferAntarBankBaru implements Initializable {
         else if (akunData.getTujuan(inputNoRek.getText()) instanceof AkunCeria) {
             warning.setText("Invalid NoRekening");
         }
-        else {
+        else if (Integer.parseInt(inputNominal.getText()) <= 0) {
+            warning.setText("Invalid Nominal");
+        } else {
             // if cekFavorit == true, save duluuu...
-            if (cekFavorit.isSelected() & !inputNama.getText().isEmpty()){
+            if (cekFavorit.isSelected() & !inputNama.getText().isEmpty()) {
                 Data.akun.addFavorit(inputNama.getText(), inputNoRek.getText());
-            }
-            else {
+            } else {
                 warning.setText("Invalid Favorite Name");
             }
 

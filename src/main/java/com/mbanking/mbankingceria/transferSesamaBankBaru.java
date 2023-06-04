@@ -61,6 +61,9 @@ public class transferSesamaBankBaru {
         else if (!(akunData.getTujuan(inputNoRek.getText()) instanceof AkunCeria)) {
             warning.setText("Invalid NoRekening");
         }
+        else if (Integer.parseInt(inputNominal.getText()) <= 0) {
+            warning.setText("Invalid Nominal");
+        }
         else {
             // if cekFavorit == true, save duluuu...
             if (cekFavorit.isSelected() & !inputNama.getText().isEmpty()){

@@ -55,7 +55,7 @@ public class RegisterController {
     private AkunCeria akunBaru;
 
     public void moveSignIn(ActionEvent event) throws IOException {
-        application.changeScene("Login.fxml");
+        application.changeScene("loginRegister/Login.fxml");
     }
 
     public void moveNextForm(ActionEvent event) throws IOException {
