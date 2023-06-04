@@ -72,7 +72,7 @@ public class listrikBerhasilController implements Initializable {
         // ADD MUTASI
         DateTimeFormatter date = DateTimeFormatter.ofPattern("dd-MM-yyyy");
         LocalDateTime tanggal = LocalDateTime.now();
-        Data.akun.addMutasiData(new Mutasi(date.format(tanggal), "Payment Listrik", Data.tfNominal, Data.akun.getSaldo()));
+        Data.akun.addMutasiData(new Mutasi(date.format(tanggal), "Payment Listrik", Data.listrikNominal, Data.akun.getSaldo()));
         clearData();
     }
 

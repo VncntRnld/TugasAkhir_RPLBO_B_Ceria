@@ -67,7 +67,7 @@ public class internetBerhasilController implements Initializable {
         labelTotal.setText("Rp " + nf.format(total));
 
         // ADD MUTASI
-        Data.akun.addMutasiData(new Mutasi(date.format(tanggal), "Payment Indihome", Data.tfNominal, Data.akun.getSaldo()));
+        Data.akun.addMutasiData(new Mutasi(date.format(tanggal), "Payment Indihome", Data.internetNominal+2500, Data.akun.getSaldo()));
         clearData();
     }
 

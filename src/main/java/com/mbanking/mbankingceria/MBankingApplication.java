@@ -37,8 +37,6 @@ public class MBankingApplication extends Application {
     public static void main(String[] args) {
         AkunData akunData = new AkunData();
 
-        Mutasi mutasi01 = new Mutasi("04-06-2023", "Out", 100000, 1000000);
-
         AkunCeria admin01 = new AkunCeria("Vincent Ronald", "71210692", "09/07/03", "Yogyakarta", "081235259418");
         admin01.setUsername("viro");
         admin01.setPassword("viro");
@@ -46,7 +44,6 @@ public class MBankingApplication extends Application {
 
         admin01.setNoRek("00000001");
         admin01.addFavorit("deha", "00000002");
-        admin01.addMutasiData(mutasi01);
 
         AkunCeria admin02 = new AkunCeria("Dhea Angelina", "71210693", "23/04/04", "Yogyakarta", "081235259418");
         admin02.setUsername("deha");

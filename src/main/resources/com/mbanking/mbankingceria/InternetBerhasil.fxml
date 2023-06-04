@@ -34,7 +34,7 @@
       <Label layoutX="36.0" layoutY="384.0" text="Biaya Admin" textFill="WHITE" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="320.0" />
       <Label layoutX="36.0" layoutY="410.0" text="Total Bayar" textFill="WHITE" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="340.0" />
       <Label fx:id="labelJumlah" layoutX="238.0" layoutY="359.0" text="233.100" textFill="WHITE" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="300.0" />
-      <Label layoutX="245.0" layoutY="384.0" text="2.500" textFill="WHITE" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="320.0" />
+      <Label alignment="TOP_RIGHT" layoutX="245.0" layoutY="384.0" prefHeight="18.0" prefWidth="62.0" text="Rp 2.500" textAlignment="RIGHT" textFill="WHITE" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="320.0" />
       <Label fx:id="labelTotal" layoutX="238.0" layoutY="410.0" text="235.600" textFill="WHITE" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="340.0" />
       <ImageView fitHeight="93.0" fitWidth="99.0" layoutX="132.0" layoutY="12.0" pickOnBounds="true" AnchorPane.leftAnchor="112.0" AnchorPane.topAnchor="-8.0">
          <image>
