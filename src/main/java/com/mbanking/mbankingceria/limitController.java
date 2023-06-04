@@ -11,13 +11,15 @@ import javafx.scene.control.TextField;
 
 import java.io.IOException;
 import java.net.URL;
+import java.text.NumberFormat;
+import java.util.Locale;
 import java.util.ResourceBundle;
 
 public class limitController implements Initializable {
     public limitController(){
     }
     MBankingApplication application = MBankingApplication.getInstance();
-
+    NumberFormat nf = NumberFormat.getInstance(Locale.ITALY);
     @FXML
     private Button buttonBack;
     @FXML
@@ -36,7 +38,8 @@ public class limitController implements Initializable {
     }
 
     public void renderInfo(){
-        limitNow.setText("Rp " + String.valueOf(Data.akun.getLimit()));
+        long limit = Data.akun.getLimit();
+        limitNow.setText("Rp " + nf.format(limit));
     }
 
     public void toMenuAkunSayaController(ActionEvent event) throws IOException {
@@ -44,16 +47,24 @@ public class limitController implements Initializable {
     }
 
     public void toPIN(ActionEvent event) throws IOException {
-        if (inputLimit.getText().isEmpty()){
-            warning.setText("Please input your limit");
-        } else if (Integer.parseInt(inputLimit.getText()) == Data.akun.getLimit()) {
-            warning.setText("Limit can not be the same");
-        } else if (Integer.parseInt(inputLimit.getText()) >= 999_000_000) {
-            warning.setText("Limit exceeded.");
-        } else {
-            Data.scene = "limit";
-            Data.newLimit = Integer.parseInt(inputLimit.getText());
-            application.changeScene("pin.fxml");
+        try {
+            if (inputLimit.getText().isEmpty()){
+                warning.setText("Please input your limit");
+            } else if (Integer.parseInt(inputLimit.getText()) == Data.akun.getLimit()) {
+                warning.setText("Limit can not be the same");
+            } else if (Integer.parseInt(inputLimit.getText()) >= 999_000_000) {
+                warning.setText("Limit exceeded.");
+            } else if (Integer.parseInt(inputLimit.getText()) < 100_000) {
+                warning.setText("Minimum Limit Rp 100.000");
+            } else {
+                Data.scene = "limit";
+                Data.newLimit = Integer.parseInt(inputLimit.getText());
+                application.changeScene("pin.fxml");
+            }
         }
+        catch (NumberFormatException e){
+            warning.setText("Invalid Input");
+        }
+
     }
 }

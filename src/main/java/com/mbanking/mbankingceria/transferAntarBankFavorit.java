@@ -69,6 +69,9 @@ public class transferAntarBankFavorit implements Initializable {
         else if (akunData.getTujuan(inputNoRek.getText()) instanceof AkunCeria) {
             warning.setText("Invalid NoRekening");
         }
+        else if (Integer.parseInt(inputNominal.getText()) >= Data.akun.getSaldo()) {
+            warning.setText("Saldo NOT enough");
+        }
         else {
             // Selesai transfer..
             Data.scene = "transfer";

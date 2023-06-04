@@ -42,6 +42,8 @@ public class internetController {
             warning.setText("Please input your data");
         } else if (Integer.parseInt(inputNominal.getText()) >= Data.akun.getSaldo()) {
             warning.setText("Saldo NOT enough");
+        } else if (Integer.parseInt(inputNominal.getText()) <= 0) {
+            warning.setText("Invalid Input");
         } else {
             Data.internetID = inputID.getText();
             Data.internetNama = inputNama.getText();

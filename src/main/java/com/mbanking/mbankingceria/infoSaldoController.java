@@ -6,18 +6,22 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.Button;
+import java.text.NumberFormat;
 import java.time.format.DateTimeFormatter;
 import java.time.LocalDateTime;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.Locale;
 import java.util.ResourceBundle;
+
 
 public class infoSaldoController implements Initializable {
     public infoSaldoController(){
 
     }
     MBankingApplication application = MBankingApplication.getInstance();
+    NumberFormat nf = NumberFormat.getInstance(Locale.ITALY);
 
     @FXML
     private Button buttonBack;
@@ -35,7 +39,9 @@ public class infoSaldoController implements Initializable {
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
         LocalDateTime now = LocalDateTime.now();
         labelTglSaldo.setText(dtf.format(now));
-        labelSaldo.setText("Rp " + Data.akun.getSaldo());
+
+        long saldo = Data.akun.getSaldo();
+        labelSaldo.setText("Rp " + nf.format(saldo));
     }
 
     public void toMenuInfoRekening(ActionEvent event) throws IOException{

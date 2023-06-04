@@ -1,5 +1,9 @@
 package com.mbanking.mbankingceria.Model;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableArray;
+import javafx.collections.ObservableList;
+
 import java.util.*;
 
 public abstract class Akun {
@@ -120,5 +124,16 @@ public abstract class Akun {
     public String[] getFavorit() {
         //langsung jadiin array dulu
         return listFavorit.toArray(new String[listFavorit.size()]);
+    }
+
+    // Simpen data mutasi 😶‍🌫️
+    public ObservableList<Mutasi> mutasiData = FXCollections.observableArrayList();
+
+    public void addMutasiData(Mutasi mutasi) {
+        mutasiData.add(mutasi);
+    }
+
+    public ObservableList<Mutasi> getMutasiData() {
+        return mutasiData;
     }
 }

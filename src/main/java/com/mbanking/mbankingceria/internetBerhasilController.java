@@ -1,6 +1,7 @@
 package com.mbanking.mbankingceria;
 
 import com.mbanking.mbankingceria.Model.Data;
+import com.mbanking.mbankingceria.Model.Mutasi;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -9,8 +10,10 @@ import javafx.scene.control.Label;
 
 import java.io.IOException;
 import java.net.URL;
+import java.text.NumberFormat;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Locale;
 import java.util.ResourceBundle;
 
 public class internetBerhasilController implements Initializable {
@@ -19,6 +22,8 @@ public class internetBerhasilController implements Initializable {
     }
 
     MBankingApplication application = MBankingApplication.getInstance();
+    NumberFormat nf = NumberFormat.getInstance(Locale.ITALY);
+
     @FXML
     private Button buttonMainMenu;
     @FXML
@@ -38,23 +43,31 @@ public class internetBerhasilController implements Initializable {
 
     public void initialize(URL location, ResourceBundle resources) {
         Data.akun.setSaldo(Data.akun.getSaldo() - Data.internetNominal - 2500);
-
         renderInfo();
     }
 
     public void renderInfo(){
+        Data data = new Data();
         DateTimeFormatter date = DateTimeFormatter.ofPattern("dd-MM-yyyy");
         LocalDateTime tanggal = LocalDateTime.now();
+        labelTanggal.setText(date.format(tanggal));
+
         DateTimeFormatter time = DateTimeFormatter.ofPattern("HH:mm:ss");
         LocalDateTime waktu = LocalDateTime.now();
-        labelTanggal.setText(date.format(tanggal));
         labelWaktu.setText(time.format(waktu));
+
         labelID.setText(Data.internetID);
         labelNama.setText(Data.internetNama);
         labelNoRek.setText(Data.akun.getNoRek());
-        labelJumlah.setText(String.valueOf(Data.internetNominal));
-        labelTotal.setText(String.valueOf(Data.internetNominal + 2500));
 
+        long nominal = Data.internetNominal;
+        labelJumlah.setText("Rp " + nf.format(nominal));
+
+        long total = Data.internetNominal + 2500;
+        labelTotal.setText("Rp " + nf.format(total));
+
+        // ADD MUTASI
+        Data.akun.addMutasiData(new Mutasi(date.format(tanggal), "Payment Indihome", Data.tfNominal, Data.akun.getSaldo()));
         clearData();
     }
 

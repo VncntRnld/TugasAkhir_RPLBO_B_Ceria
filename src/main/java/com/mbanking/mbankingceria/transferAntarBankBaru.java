@@ -59,6 +59,10 @@ public class transferAntarBankBaru implements Initializable {
         application.changeScene("transferAntarBank_Favorit.fxml");
     }
 
+    public void cekSaveFavorit(ActionEvent event){
+        inputNama.setDisable(!cekFavorit.isSelected());
+    }
+
     public void toPIN(ActionEvent event) throws IOException {
         // Validasi 🔎
         if (inputNoRek.getText().isEmpty() || inputNominal.getText().isEmpty()){
@@ -66,6 +70,9 @@ public class transferAntarBankBaru implements Initializable {
         }
         else if (!akunData.cekTujuan(inputNoRek.getText())){
             warning.setText("Invalid NoRekening");
+        }
+        else if (Integer.parseInt(inputNominal.getText()) >= Data.akun.getSaldo()) {
+            warning.setText("Saldo NOT enough");
         }
         // Tergantung choicebox 😒
         else if (akunData.getTujuan(inputNoRek.getText()) instanceof AkunCeria) {

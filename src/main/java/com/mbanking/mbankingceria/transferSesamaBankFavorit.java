@@ -65,6 +65,9 @@ public class transferSesamaBankFavorit implements Initializable {
         if (inputNoRek.getText().isEmpty() || inputNominal.getText().isEmpty()){
             warning.setText("Please input your data");
         }
+        else if (Integer.parseInt(inputNominal.getText()) >= Data.akun.getSaldo()) {
+            warning.setText("Saldo NOT enough");
+        }
         else if (!akunData.cekTujuan(inputNoRek.getText())){
             warning.setText("Invalid NoRekening");
         }

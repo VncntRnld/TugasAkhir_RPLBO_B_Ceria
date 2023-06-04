@@ -57,12 +57,12 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <TableView layoutX="25.0" layoutY="190.0" prefHeight="335.0" prefWidth="274.0">
+            <TableView fx:id="tableMutasi" layoutX="25.0" layoutY="190.0" prefHeight="335.0" prefWidth="274.0">
               <columns>
-                <TableColumn prefWidth="90.00003051757812" text="Keterangan" />
-                <TableColumn prefWidth="34.66668701171875" text="Jenis" />
-                  <TableColumn prefWidth="62.6666259765625" text="Nominal" />
-                  <TableColumn prefWidth="85.33331298828125" text="Saldo Akhir" />
+                <TableColumn fx:id="colTanggal" prefWidth="69.60003662109375" text="Tanggal" />
+                <TableColumn fx:id="colKeterangan" prefWidth="42.39996337890625" text="Ket" />
+                  <TableColumn fx:id="colNominal" prefWidth="77.5999755859375" text="Nominal" />
+                  <TableColumn fx:id="colSaldo" prefWidth="88.00006103515625" text="Saldo" />
               </columns>
             </TableView>
             <Pane AnchorPane.leftAnchor="17.0" AnchorPane.topAnchor="22.0">

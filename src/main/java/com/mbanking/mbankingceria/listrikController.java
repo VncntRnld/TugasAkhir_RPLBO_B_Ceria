@@ -42,6 +42,8 @@ public class listrikController {
             warning.setText("Saldo NOT enough");
         } else if (Integer.parseInt(inputNominal.getText()) % 50_000 != 0) {
             warning.setText("Nominal is NOT multiple of Rp 50.000,00");
+        } else if (Integer.parseInt(inputNominal.getText()) <= 0) {
+            warning.setText("Invalid Input");
         } else {
             Data.listrikID = inputID.getText();
             Data.listrikNama = inputNama.getText();

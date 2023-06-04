@@ -41,7 +41,7 @@
       <TextField fx:id="inputNama" disable="true" layoutX="41.0" layoutY="228.0" prefHeight="0.0" prefWidth="239.0" />
       <Label layoutX="42.0" layoutY="168.0" text="Nomor Rekening" textFill="WHITE" />
       <TextField fx:id="inputNoRek" layoutX="42.0" layoutY="185.0" prefHeight="0.0" prefWidth="239.0" AnchorPane.leftAnchor="42.0" />
-      <CheckBox fx:id="cekFavorit" layoutX="44.0" layoutY="262.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="163.0" text="Simpan sebagai Daftar Favorit" textFill="WHITE">
+      <CheckBox fx:id="cekFavorit" layoutX="44.0" layoutY="262.0" mnemonicParsing="false" onAction="#cekSaveFavorit" prefHeight="17.0" prefWidth="163.0" text="Simpan sebagai Daftar Favorit" textFill="WHITE">
          <font>
             <Font size="10.0" />
          </font>

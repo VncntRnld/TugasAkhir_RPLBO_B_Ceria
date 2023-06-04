@@ -1,6 +1,7 @@
 package com.mbanking.mbankingceria;
 
 import com.mbanking.mbankingceria.Model.Data;
+import com.mbanking.mbankingceria.Model.Mutasi;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -9,6 +10,8 @@ import javafx.scene.control.Label;
 
 import java.io.IOException;
 import java.net.URL;
+import java.text.NumberFormat;
+import java.util.Locale;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ResourceBundle;
@@ -20,7 +23,7 @@ public class listrikBerhasilController implements Initializable {
     }
 
     MBankingApplication application = MBankingApplication.getInstance();
-
+    NumberFormat nf = NumberFormat.getInstance(Locale.ITALY);
     @FXML
     private Button buttonMainMenu;
     @FXML
@@ -49,21 +52,27 @@ public class listrikBerhasilController implements Initializable {
     public void renderInfo(){
         labelID.setText(Data.listrikID);
         labelNama.setText(Data.listrikNama);
+
         DateTimeFormatter datetime = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
         LocalDateTime tgl = LocalDateTime.now();
         labelTanggalWaktu.setText(datetime.format(tgl));
 
         long pajak = (long) (Data.listrikNominal*0.02);
         long beli = (Data.listrikNominal - pajak - 2000);
-        labelNominal.setText(String.valueOf(Data.listrikNominal));
-        labelRpToken.setText(String.valueOf(beli));
-        labelPajak.setText(String.valueOf(pajak));
+        long nominal = Data.listrikNominal;
+        labelNominal.setText("Rp " + nf.format(nominal));
+        labelRpToken.setText("Rp " + nf.format(beli));
+        labelPajak.setText("Rp " + nf.format(pajak));
         labelKWh.setText(String.valueOf(beli/1000));
 
         Random random = new Random();
         long token = (long) (1000_0000_0000_0000L + random.nextFloat() * 9000_0000_0000_0000L);
         labelToken.setText(String.valueOf(token));
 
+        // ADD MUTASI
+        DateTimeFormatter date = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+        LocalDateTime tanggal = LocalDateTime.now();
+        Data.akun.addMutasiData(new Mutasi(date.format(tanggal), "Payment Listrik", Data.tfNominal, Data.akun.getSaldo()));
         clearData();
     }
 

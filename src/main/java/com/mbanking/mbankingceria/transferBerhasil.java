@@ -2,6 +2,7 @@ package com.mbanking.mbankingceria;
 
 import com.mbanking.mbankingceria.Model.AkunCeria;
 import com.mbanking.mbankingceria.Model.Data;
+import com.mbanking.mbankingceria.Model.Mutasi;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -10,6 +11,8 @@ import javafx.scene.control.Label;
 
 import java.io.IOException;
 import java.net.URL;
+import java.text.NumberFormat;
+import java.util.Locale;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ResourceBundle;
@@ -21,7 +24,7 @@ public class transferBerhasil implements Initializable {
     }
 
     MBankingApplication application = MBankingApplication.getInstance();
-
+    NumberFormat nf = NumberFormat.getInstance(Locale.ITALY);
     @FXML
     private Button buttonMainMenu;
     @FXML
@@ -53,7 +56,6 @@ public class transferBerhasil implements Initializable {
 
     public void renderInfo(){
         Data data = new Data();
-
         labelNama.setText(data.getAkunTujuan().getNamaNasabah());
         labelNoRek.setText(data.getAkunTujuan().getNoRek());
 
@@ -65,22 +67,36 @@ public class transferBerhasil implements Initializable {
         labelTanggal.setText(date.format(tanggal));
         labelWaktu.setText(time.format(waktu));
 
-        labelNominal.setText(String.valueOf(Data.tfNominal));
+        // ADD MUTASI 1.akunDipakai, 2.Tujuan 👁️👄👁️
+        Data.akun.addMutasiData(new Mutasi(date.format(tanggal), "Transfer ke: "+data.getAkunTujuan().getNamaNasabah(), Data.tfNominal, Data.akun.getSaldo()));
+        data.getAkunTujuan().addMutasiData(new Mutasi(date.format(tanggal), "Transfer dari: "+Data.akun.getNamaNasabah(), Data.tfNominal, data.getAkunTujuan().getSaldo()));
+
+        long nominal = Data.tfNominal;
+        labelNominal.setText("Rp " + nf.format(nominal));
+
+        if (data.getAkunTujuan() instanceof AkunCeria){
+            labelBank.setText("Ceria Bank");
+        }
+        else {
+            labelBank.setText("Cemberut Bank");
+        }
 
         // Biaya Admin 😒
         if (data.getAkunTujuan() instanceof AkunCeria){
-            labelAdmin.setText("0");
+            labelAdmin.setText("Rp 0");
         }
         else {
-            labelAdmin.setText("2500");
+            labelAdmin.setText("Rp 2.500");
         }
 
         // Total 😗
         if (data.getAkunTujuan() instanceof AkunCeria){
-            labelTotal.setText(String.valueOf(Data.tfNominal));
+            long totalSesama = Data.tfNominal;
+            labelTotal.setText("Rp " + nf.format(totalSesama));
         }
         else {
-            labelTotal.setText(String.valueOf(Data.tfNominal+2500));
+            long totalBeda = Data.tfNominal + 2500;
+            labelTotal.setText("Rp " + nf.format(totalBeda));
         }
 
         // Berita
