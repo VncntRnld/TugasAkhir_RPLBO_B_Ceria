@@ -79,6 +79,14 @@ public class transferAntarBankBaru implements Initializable {
             warning.setText("Invalid NoRekening");
         }
         else {
+            // if cekFavorit == true, save duluuu...
+            if (cekFavorit.isSelected() & !inputNama.getText().isEmpty()){
+                Data.akun.addFavorit(inputNama.getText(), inputNoRek.getText());
+            }
+            else {
+                warning.setText("Invalid Favorite Name");
+            }
+
             // Selesai transfer..
             Data.scene = "transfer";
             Data.noRekTujuan = inputNoRek.getText();
